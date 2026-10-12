@@ -55,36 +55,38 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
         <div>
           <div className="flex items-center gap-2">
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300 text-xs">
-              <Sparkles className="w-3.5 h-3.5" />
+              <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
             </span>
             <span className="text-xs font-semibold uppercase tracking-wider text-amber-600 dark:text-amber-400">
-              Síntese Factual das Propostas Oficiais
+              Síntese Factual das Diretrizes
             </span>
           </div>
-          <h3 className="mt-1 text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
+          <h3 className="mt-1 text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
             Comparativo de Planos de Governo
           </h3>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            Resumos padronizados a partir dos documentos oficiais registrados no TSE (DivulgaCandContas).
+          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+            Resumos padronizados a partir das diretrizes oficiais protocoladas na Justiça Eleitoral (TSE).
           </p>
         </div>
 
-        {/* Seletor de Temas */}
-        <div className="flex flex-wrap gap-2">
+        {/* Seletor de Temas (Scroll horizontal suave no mobile) */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full" role="tablist" aria-label="Eixos temáticos de propostas">
           {TEMAS.map(tema => {
             const Icon = tema.icon;
             const isSelected = temaAtivo === tema.id;
             return (
               <button
                 key={tema.id}
+                role="tab"
+                aria-selected={isSelected}
                 onClick={() => setTemaAtivo(tema.id)}
-                className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium transition cursor-pointer ${
+                className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium whitespace-nowrap transition cursor-pointer ${
                   isSelected
-                    ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-sm'
+                    ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                     : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700'
                 }`}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-4 h-4" aria-hidden="true" />
                 <span>{tema.label}</span>
               </button>
             );
@@ -95,7 +97,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
       {/* Grid Lado a Lado */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Candidato A (Lula) */}
-        <div className="rounded-2xl border border-red-100 dark:border-red-950/40 bg-white dark:bg-zinc-900 p-6 shadow-sm flex flex-col justify-between">
+        <div className="rounded-2xl border border-red-100 dark:border-red-950/40 bg-white dark:bg-zinc-900 p-6 shadow-xs flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
               <span className="text-sm font-bold text-red-600 dark:text-red-400">
@@ -109,10 +111,10 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             </h4>
 
             {/* Bullets resumidos */}
-            <ul className="mt-3 space-y-2.5 text-xs text-zinc-600 dark:text-zinc-300">
+            <ul className="mt-3 space-y-2.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
               {propA?.resumo_ia.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" aria-hidden="true" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -122,18 +124,20 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
           <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800">
             <button
               onClick={() => toggleIntegral(candA.id)}
-              className="flex items-center justify-between w-full text-xs font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer"
+              aria-expanded={!!mostrarTextoIntegral[candA.id]}
+              className="flex items-center justify-between w-full text-xs font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer py-1"
             >
-              <span>{mostrarTextoIntegral[candA.id] ? 'Recolher trecho' : 'Ver trecho oficial do plano'}</span>
+              <span>{mostrarTextoIntegral[candA.id] ? 'Recolher trecho oficial' : 'Ver citação integral do plano'}</span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${
                   mostrarTextoIntegral[candA.id] ? 'rotate-180' : ''
                 }`}
+                aria-hidden="true"
               />
             </button>
 
             {mostrarTextoIntegral[candA.id] && (
-              <div className="mt-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/60 p-3 text-xs italic text-zinc-600 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
+              <div className="mt-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/60 p-3 text-xs italic text-zinc-600 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800 leading-relaxed">
                 "{propA?.texto_oficial}"
               </div>
             )}
@@ -146,20 +150,20 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-red-600 dark:text-red-400 hover:underline"
               >
-                Abrir TSE <ExternalLink className="w-3 h-3" />
+                Abrir TSE <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Candidato B */}
-        <div className="rounded-2xl border border-emerald-100 dark:border-emerald-900/40 bg-white dark:bg-zinc-900 p-6 shadow-sm flex flex-col justify-between">
+        {/* Candidato B (Flávio Bolsonaro) */}
+        <div className="rounded-2xl border border-emerald-100 dark:border-emerald-900/40 bg-white dark:bg-zinc-900 p-6 shadow-xs flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
               <span className="text-sm font-bold text-emerald-600 dark:text-emerald-400">
                 {candB.nome_urna} ({candB.numero})
               </span>
-              <span className="text-xs text-zinc-400">Pág. {propB?.pagina_documento} do TSE</span>
+              <span className="text-xs text-zinc-400">Pág. {propB?.pagina_documento}</span>
             </div>
 
             <h4 className="mt-4 text-base font-semibold text-zinc-900 dark:text-white">
@@ -167,10 +171,10 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             </h4>
 
             {/* Bullets resumidos */}
-            <ul className="mt-3 space-y-2.5 text-xs text-zinc-600 dark:text-zinc-300">
+            <ul className="mt-3 space-y-2.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
               {propB?.resumo_ia.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" />
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" aria-hidden="true" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -180,18 +184,20 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
           <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800">
             <button
               onClick={() => toggleIntegral(candB.id)}
-              className="flex items-center justify-between w-full text-xs font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer"
+              aria-expanded={!!mostrarTextoIntegral[candB.id]}
+              className="flex items-center justify-between w-full text-xs font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer py-1"
             >
-              <span>{mostrarTextoIntegral[candB.id] ? 'Recolher trecho' : 'Ver trecho oficial do plano'}</span>
+              <span>{mostrarTextoIntegral[candB.id] ? 'Recolher trecho oficial' : 'Ver citação integral do plano'}</span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${
                   mostrarTextoIntegral[candB.id] ? 'rotate-180' : ''
                 }`}
+                aria-hidden="true"
               />
             </button>
 
             {mostrarTextoIntegral[candB.id] && (
-              <div className="mt-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/60 p-3 text-xs italic text-zinc-600 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
+              <div className="mt-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/60 p-3 text-xs italic text-zinc-600 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800 leading-relaxed">
                 "{propB?.texto_oficial}"
               </div>
             )}
@@ -204,7 +210,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
               >
-                Abrir TSE <ExternalLink className="w-3 h-3" />
+                Abrir Perfil Oficial <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
             </div>
           </div>

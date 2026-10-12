@@ -3,24 +3,12 @@
     "ano": 2026,
     "cargo": "Presidente da República",
     "turno": "2º Turno",
-    "data_atualizacao": "12 de outubro de 2026",
+    "data_atualizacao": "12 de Outubro de 2026",
     "fontes_oficiais": [
-      {
-        "nome": "TSE - DivulgaCandContas",
-        "url": "https://divulgacandcontas.tse.jus.br"
-      },
-      {
-        "nome": "Câmara dos Deputados (API v2)",
-        "url": "https://dadosabertos.camara.leg.br"
-      },
-      {
-        "nome": "Senado Federal (Dados Abertos)",
-        "url": "https://legis.senado.leg.br/dadosabertos"
-      },
-      {
-        "nome": "Portal da Legislação da Presidência da República",
-        "url": "http://www4.planalto.gov.br/legislacao"
-      }
+      { "nome": "TSE - DivulgaCandContas", "url": "https://divulgacandcontas.tse.jus.br" },
+      { "nome": "Câmara dos Deputados (API v2)", "url": "https://dadosabertos.camara.leg.br" },
+      { "nome": "Senado Federal (Dados Abertos)", "url": "https://legis.senado.leg.br/dadosabertos" },
+      { "nome": "Portal da Legislação da Presidência da República", "url": "http://www4.planalto.gov.br/legislacao" }
     ]
   },
   "candidatos": [
@@ -30,49 +18,31 @@
       "nome_urna": "Lula",
       "numero": "13",
       "partido": "PT - Partido dos Trabalhadores",
-      "coligacao": "Brasil da Esperança / Frente de Centro-Esquerda",
-      "vice": "Geraldo Alckmin (PSB)",
-      "foto": "https://www.camara.leg.br/internet/deputado/bandep/139289.jpg",
+      "coligacao": "Brasil da Esperança / Federação Brasil da Esperança",
+      "vice": "Geraldo Alckmin (PSB) - Atual Vice-Presidente da República",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Luiz_In%C3%A1cio_Lula_da_Silva_%282023%29.jpg/800px-Luiz_In%C3%A1cio_Lula_da_Silva_%282023%29.jpg",
       "cor_tema": "#dc2626",
       "historico_resumo": "Presidente da República (2003-2010 e 2023-atualmente) e Deputado Federal Constituinte (1987-1991).",
       "kpis": {
         "anos_vida_publica": 46,
         "projetos_apresentados": 1840,
         "leis_aprovadas_autor_relator": 340,
-        "frequencia_plenario": "Executivo Federal"
+        "cargo_atual": "Presidente da República"
       },
       "radar_foco": [
-        {
-          "eixo": "Economia",
-          "valor": 86
-        },
-        {
-          "eixo": "Saúde",
-          "valor": 90
-        },
-        {
-          "eixo": "Educação",
-          "valor": 88
-        },
-        {
-          "eixo": "Segurança",
-          "valor": 64
-        },
-        {
-          "eixo": "Meio Ambiente",
-          "valor": 92
-        },
-        {
-          "eixo": "Gestão Pública",
-          "valor": 82
-        }
+        { "eixo": "Economia", "valor": 86 },
+        { "eixo": "Saúde", "valor": 90 },
+        { "eixo": "Educação", "valor": 88 },
+        { "eixo": "Segurança", "valor": 64 },
+        { "eixo": "Meio Ambiente", "valor": 92 },
+        { "eixo": "Gestão Pública", "valor": 82 }
       ],
       "propostas_por_tema": {
         "economia": {
           "titulo": "Isenção de IRPF, Salário Mínimo Real e Neoindustrialização Verde",
           "resumo_ia": [
-            "Compromisso com isenção integral de Imposto de Renda Pessoa Física (IRPF) até R$ 5.000, compensada por tributação de lucros e dividendos de altas rendas.",
-            "Política contínua de valorização do salário mínimo com aumento real acima da inflação atrelado ao crescimento anual do PIB.",
+            "Compromisso com isenção integral de Imposto de Renda Pessoa Física (IRPF) até R$ 5.000, compensada por tributação progressiva sobre lucros e dividendos de altas rendas.",
+            "Política permanente de valorização do salário mínimo com aumento real acima da inflação atrelado ao crescimento anual do PIB.",
             "Investimentos estruturantes via Novo PAC (Programa de Aceleração do Crescimento) com foco em transição energética e infraestrutura logística."
           ],
           "texto_oficial": "O projeto econômico prioriza a estabilidade fiscal com inclusão social, expansão do mercado consumidor interno, fortalecimento das estatais estratégicas e reindustrialização sustentável baseada em inovação e energia limpa.",
@@ -85,7 +55,7 @@
           "resumo_ia": [
             "Expansão e consolidação do Programa Mais Médicos com prioridade para periferias urbanas, regiões remotas e comunidades indígenas.",
             "Ampliação da gratuidade do Farmácia Popular para medicamentos essenciais de hipertensão, diabetes, asma e saúde integral da mulher.",
-            "Digitalização integrada da rede pública através do Meu SUS Digital e mutirões regionais para zerar filas de cirurgias eletivas."
+            "Digitalização integrada da rede pública através do Meu SUS Digital e mutirões regionais para redução de filas de cirurgias eletivas."
           ],
           "texto_oficial": "Defesa inegociável do Sistema Único de Saúde (SUS) como patrimônio público universal e gratuito, com fomento ao Complexo Econômico-Industrial da Saúde para reduzir a dependência externa de insumos e vacinas.",
           "fonte_documento": "Diretrizes de Governo Registradas no TSE",
@@ -95,7 +65,7 @@
         "educacao": {
           "titulo": "Pé-de-Meia, Expansão dos Institutos Federais e Tempo Integral",
           "resumo_ia": [
-            "Consolidação nacional do Programa Pé-de-Meia (poupança escolar) para erradicar o abandono de jovens no Ensino Médio da rede pública.",
+            "Consolidação nacional do Programa Pé-de-Meia (poupança escolar) para combater o abandono de jovens no Ensino Médio da rede pública.",
             "Construção de 100 novos campi de Institutos Federais de Educação, Ciência e Tecnologia (IFs) integrados ao mercado de trabalho técnico.",
             "Apoio técnico e financeiro federal aos municípios e estados para universalização progressiva das escolas em tempo integral."
           ],
@@ -124,42 +94,24 @@
       "nome_urna": "Flávio Bolsonaro",
       "numero": "22",
       "partido": "PL - Partido Liberal",
-      "coligacao": "Aliança pela Liberdade / Direita Conservadora",
-      "vice": "A ser homologado em convenção oficial",
-      "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5894.jpg",
+      "coligacao": "Aliança pela Liberdade / Coligação de Direita",
+      "vice": "A ser homologado em convenção oficial (articulações com aliados de centro-direita)",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Senador_Fl%C3%A1vio_Bolsonaro.jpg/800px-Senador_Fl%C3%A1vio_Bolsonaro.jpg",
       "cor_tema": "#16a34a",
       "historico_resumo": "Senador da República pelo Rio de Janeiro (2019-atualmente) e Deputado Estadual na ALERJ por 4 mandatos (2003-2019).",
       "kpis": {
         "anos_vida_publica": 23,
         "projetos_apresentados": 445,
         "leis_aprovadas_autor_relator": 28,
-        "frequencia_plenario": "92.4% (Senado)"
+        "cargo_atual": "Senador da República (RJ)"
       },
       "radar_foco": [
-        {
-          "eixo": "Economia",
-          "valor": 94
-        },
-        {
-          "eixo": "Saúde",
-          "valor": 60
-        },
-        {
-          "eixo": "Educação",
-          "valor": 64
-        },
-        {
-          "eixo": "Segurança",
-          "valor": 96
-        },
-        {
-          "eixo": "Meio Ambiente",
-          "valor": 52
-        },
-        {
-          "eixo": "Gestão Pública",
-          "valor": 88
-        }
+        { "eixo": "Economia", "valor": 94 },
+        { "eixo": "Saúde", "valor": 60 },
+        { "eixo": "Educação", "valor": 64 },
+        { "eixo": "Segurança", "valor": 96 },
+        { "eixo": "Meio Ambiente", "valor": 52 },
+        { "eixo": "Gestão Pública", "valor": 88 }
       ],
       "propostas_por_tema": {
         "economia": {
@@ -215,156 +167,89 @@
   ],
   "votacoes_historicas": [
     {
-      "materia": "Fim das Saídas Temporárias de Presos (PL 2253/2022)",
-      "descricao": "Restrição às saídas temporárias ('saidinhas') de detentos do semiaberto em datas comemorativas.",
-      "data": "2024-03-20",
-      "fonte_oficial_camara": "https://www25.senado.leg.br/web/atividade/materias/-/materia/154406",
+      "materia": "Reforma Tributária sobre o Consumo (EC 132/2023)",
+      "tema": "Economia e Sistema Tributário",
+      "descricao": "Unificação histórica de tributos sobre o consumo (PIS, Cofins, IPI, ICMS e ISS) em IVA Dual (CBS e IBS), com desoneração integral da cesta básica e cashback para famílias de baixa renda.",
+      "data": "Novembro/2023",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158586",
       "candidato_1": {
-        "voto": "VETOU PARCIAL",
-        "detalhe": "Vetou trecho que proibia visitas familiares a presos em estudo e trabalho; após derrubada do veto pelo Congresso, a restrição virou lei."
+        "posicionamento": "Articulou e Sancionou",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Defendeu a reforma como marco estruturante para destravar a produtividade, eliminar a guerra fiscal entre estados e garantir simplificação com justiça social via alíquota zero para alimentos essenciais."
       },
       "candidato_2": {
-        "voto": "SIM",
-        "detalhe": "Foi o relator da matéria na Comissão de Segurança Pública do Senado, liderou a aprovação do texto e votou a favor do fim total das 'saidinhas'."
+        "posicionamento": "Votou Contra no Senado",
+        "tipo_badge": "contrario",
+        "argumentacao": "Argumentou que a reforma gerou incerteza com período de transição longo, risco de aumento de carga tributária final sobre serviços e comércio, e excesso de setores beneficiados com regimes diferenciados."
       }
     },
     {
-      "materia": "Marco Legal do Saneamento Básico (PL 4162/2019)",
-      "descricao": "Abertura para concorrência e investimentos privados nos serviços municipais de água e tratamento de esgoto.",
-      "data": "2020-06-24",
-      "fonte_oficial_camara": "https://www25.senado.leg.br/web/atividade/materias/-/materia/140540",
+      "materia": "Tributação de Fundos Exclusivos e Offshores (Lei 14.754/2023)",
+      "tema": "Tributação e Justiça Fiscal",
+      "descricao": "Instituição de tributação periódica ('come-cotas') sobre fundos fechados de alta renda e regulamentação da tributação de investimentos mantidos por pessoas físicas no exterior (offshores).",
+      "data": "Dezembro/2023",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160100",
       "candidato_1": {
-        "voto": "NÃO",
-        "detalhe": "Contrário à privatização irrestrita; editou decretos em 2023 para flexibilizar regras e permitir que estatais operassem sem licitação."
+        "posicionamento": "Propositor e Sancionou",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Defendeu a medida como imperativo de equidade fiscal para taxar rendimentos de super-ricos que tinham privilégios de diferimento tributário, utilizando a receita para financiar a correção da faixa de isenção do IRPF."
       },
       "candidato_2": {
-        "voto": "SIM",
-        "detalhe": "Votou favorável no Senado pela abertura do setor de saneamento à iniciativa privada para atrair capital e universalizar o esgoto."
+        "posicionamento": "Votou Contra no Senado",
+        "tipo_badge": "contrario",
+        "argumentacao": "Sustentou que a taxação retroativa de fundos configurou aumento de impostos que desestimula a permanência de grandes capitais no país, defendendo que o equilíbrio fiscal deve ser obtido via redução de despesas públicas."
       }
     },
     {
-      "materia": "Autonomia Formal do Banco Central (PLP 19/2019)",
-      "descricao": "Mandatos fixos e não coincidentes de 4 anos para presidente e diretores da autoridade monetária nacional.",
-      "data": "2020-11-03",
-      "fonte_oficial_camara": "https://www25.senado.leg.br/web/atividade/materias/-/materia/136015",
+      "materia": "Marco Temporal de Terras Indígenas (Lei 14.701/2023)",
+      "tema": "Direitos Indígenas e Meio Ambiente",
+      "descricao": "Estabelecimento de que povos indígenas apenas teriam direito à demarcação de terras que já estivessem ocupando na data da promulgação da Constituição Federal (5 de outubro de 1988).",
+      "data": "Setembro/2023",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157774",
       "candidato_1": {
-        "voto": "NÃO",
-        "detalhe": "Partido votou contra no Congresso; posicionou-se criticamente em seu mandato presidencial defendendo subordinação às diretrizes do governo eleito."
+        "posicionamento": "Vetou o Marco Temporal",
+        "tipo_badge": "veto",
+        "argumentacao": "Vetou a tese por considerá-la inconstitucional e violadora de direitos originários dos povos indígenas (em linha com decisão do STF), argumentando a necessidade de preservação da floresta e de comunidades originárias."
       },
       "candidato_2": {
-        "voto": "SIM",
-        "detalhe": "Votou SIM no Senado pela autonomia legal do Banco Central, sustentando que a independência técnica é essencial para controle inflacionário."
+        "posicionamento": "Votou a Favor da Tese",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Defendeu a vigência do marco temporal como garantia fundamental de segurança jurídica para propriedades produtivas no campo, pacificando conflitos fundiários e assegurando previsibilidade ao agronegócio."
       }
     },
     {
-      "materia": "Privatização da Eletrobras (MP 1031/2021)",
-      "descricao": "Desestatização e capitalização em bolsa da maior companhia de energia elétrica da América Latina.",
-      "data": "2021-06-17",
-      "fonte_oficial_camara": "https://www25.senado.leg.br/web/atividade/materias/-/materia/148386",
+      "materia": "Restrição às Saídas Temporárias de Detentos (Lei 14.843/2024)",
+      "tema": "Segurança Pública e Execução Penal",
+      "descricao": "Alteração da Lei de Execução Penal para extinguir o benefício da saída temporária de presos em datas comemorativas, mantendo autorização apenas para atividades de frequência a cursos de instrução ou ensino.",
+      "data": "Março/2024",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/154406",
       "candidato_1": {
-        "voto": "NÃO",
-        "detalhe": "Posicionamento frontalmente contrário; como Presidente acionou a AGU e o STF contestando o limite de poder de voto da União na companhia."
+        "posicionamento": "Vetou Restrição Familiar",
+        "tipo_badge": "veto",
+        "argumentacao": "Aplicou veto parcial para preservar a visita a familiares de detentos do semiaberto que cometeram crimes sem violência, apontando o princípio da ressocialização progressiva; o veto foi posteriormente derrubado pelo Congresso."
       },
       "candidato_2": {
-        "voto": "SIM",
-        "detalhe": "Votou favorável no Senado à privatização da estatal elétrica, defendendo eficiência de gestão privada e atração de recursos ao Tesouro."
+        "posicionamento": "Relatou e Votou a Favor",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Atuou como relator do projeto na Comissão de Segurança do Senado, liderando a votação pelo fim integral das 'saidinhas', sustentando que o benefício expunha a população ao risco de reincidência e impunidade."
       }
     },
     {
-      "materia": "Reforma Tributária do Consumo (PEC 45/2019)",
-      "descricao": "Unificação de tributos federais e subnacionais sobre o consumo em IBS e CBS com criação de IVA dual.",
-      "data": "2023-11-08",
-      "fonte_oficial_camara": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158586",
+      "materia": "Marco Legal do Saneamento Básico (Lei 14.026/2020)",
+      "tema": "Infraestrutura e Concessões",
+      "descricao": "Abertura obrigatória do setor de água e esgoto a processos licitatórios e atração de investimentos privados, com metas de universalização de atendimento até 2033.",
+      "data": "Junho/2020",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/140540",
       "candidato_1": {
-        "voto": "SIM",
-        "detalhe": "Prioridade central do Executivo; articulou a aprovação histórica e promulgou a Emenda Constitucional da Reforma Tributária em 2023."
+        "posicionamento": "Contrário à Privatização",
+        "tipo_badge": "contrario",
+        "argumentacao": "Posicionou-se historicamente contra a privatização do saneamento; como Presidente em 2023, assinou decretos para flexibilizar prazos e permitir que empresas públicas estaduais continuassem a prestar serviços sem licitação."
       },
       "candidato_2": {
-        "voto": "NÃO",
-        "detalhe": "Votou contra a proposta no Senado Federal, manifestando preocupação com impacto da alíquota futura sobre comércio e serviços."
+        "posicionamento": "Votou a Favor da Lei",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Votou favorável no Senado, argumentando que o modelo estatal não possuía capacidade financeira para universalizar o tratamento de água e esgoto no país e que a competição privada aceleraria investimentos bilionários."
       }
-    }
-  ],
-  "quiz_afinidade": [
-    {
-      "id": 1,
-      "pergunta": "Qual modelo de gestão você prefere para infraestrutura e serviços como saneamento e energia?",
-      "opcoes": [
-        {
-          "texto": "Prioridade para controle público e estatais estratégicas com investimento governamental direto",
-          "peso_candidato_1": 1,
-          "peso_candidato_2": 0
-        },
-        {
-          "texto": "Abertura para concessões, privatizações e participação prioritária de empresas privadas",
-          "peso_candidato_1": 0,
-          "peso_candidato_2": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "pergunta": "Sobre o sistema tributário nacional, qual direção você considera mais adequada?",
-      "opcoes": [
-        {
-          "texto": "Tributar mais lucros, dividendos e altas rendas para isentar até R$ 5.000 e financiar serviços públicos",
-          "peso_candidato_1": 1,
-          "peso_candidato_2": 0
-        },
-        {
-          "texto": "Cortar ministérios e gastos do Estado, com teto de alíquotas e desoneração geral da folha de pagamento",
-          "peso_candidato_1": 0,
-          "peso_candidato_2": 1
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "pergunta": "Na segurança pública e justiça penal, qual medida deve ter maior prioridade?",
-      "opcoes": [
-        {
-          "texto": "Controle rígido de armas, inteligência contra lavagem de dinheiro e prevenção integrada de violência",
-          "peso_candidato_1": 1,
-          "peso_candidato_2": 0
-        },
-        {
-          "texto": "Fim total de saidinhas, retaguarda jurídica ampliada para policiais e facilitação da posse de armas",
-          "peso_candidato_1": 0,
-          "peso_candidato_2": 1
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "pergunta": "Na saúde pública, qual caminho você considera prioritário para reduzir filas?",
-      "opcoes": [
-        {
-          "texto": "Fortalecer 100% o SUS com expansão do Mais Médicos e produção nacional de medicamentos e vacinas",
-          "peso_candidato_1": 1,
-          "peso_candidato_2": 0
-        },
-        {
-          "texto": "Gestão por Organizações Sociais (OSs) e vouchers para atendimento rápido em clínicas privadas conveniadas",
-          "peso_candidato_1": 0,
-          "peso_candidato_2": 1
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "pergunta": "Na educação escolar dos jovens, qual modelo você apoia prioritariamente?",
-      "opcoes": [
-        {
-          "texto": "Poupança escolar (Pé-de-Meia) e expansão da rede de Institutos Federais (IFs) de tempo integral",
-          "peso_candidato_1": 1,
-          "peso_candidato_2": 0
-        },
-        {
-          "texto": "Expansão de escolas cívico-militares, ênfase rigorosa em disciplinas exatas e combate a viés em aula",
-          "peso_candidato_1": 0,
-          "peso_candidato_2": 1
-        }
-      ]
     }
   ]
 }
