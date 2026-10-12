@@ -3,12 +3,24 @@
     "ano": 2026,
     "cargo": "Presidente da República",
     "turno": "2º Turno",
-    "data_atualizacao": "12 de Outubro de 2026",
+    "data_atualizacao": "12 de outubro de 2026",
     "fontes_oficiais": [
-      { "nome": "TSE - DivulgaCandContas", "url": "https://divulgacandcontas.tse.jus.br" },
-      { "nome": "Câmara dos Deputados (API v2)", "url": "https://dadosabertos.camara.leg.br" },
-      { "nome": "Senado Federal (Dados Abertos)", "url": "https://legis.senado.leg.br/dadosabertos" },
-      { "nome": "Portal da Legislação da Presidência da República", "url": "http://www4.planalto.gov.br/legislacao" }
+      {
+        "nome": "TSE (Tribunal Superior Eleitoral)",
+        "url": "https://divulgacandcontas.tse.jus.br"
+      },
+      {
+        "nome": "Câmara dos Deputados",
+        "url": "https://dadosabertos.camara.leg.br"
+      },
+      {
+        "nome": "Senado Federal",
+        "url": "https://legis.senado.leg.br/dadosabertos"
+      },
+      {
+        "nome": "Portal da Legislação",
+        "url": "http://www4.planalto.gov.br/legislacao"
+      }
     ]
   },
   "candidatos": [
@@ -18,11 +30,11 @@
       "nome_urna": "Lula",
       "numero": "13",
       "partido": "PT - Partido dos Trabalhadores",
-      "coligacao": "Brasil da Esperança / Federação Brasil da Esperança",
-      "vice": "Geraldo Alckmin (PSB) - Atual Vice-Presidente da República",
+      "coligacao": "Brasil da Esperança",
+      "vice": "Geraldo Alckmin (PSB)",
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Luiz_In%C3%A1cio_Lula_da_Silva_%282023%29.jpg/800px-Luiz_In%C3%A1cio_Lula_da_Silva_%282023%29.jpg",
       "cor_tema": "#dc2626",
-      "historico_resumo": "Presidente da República (2003-2010 e 2023-atualmente) e Deputado Federal Constituinte (1987-1991).",
+      "historico_resumo": "Atual Presidente do Brasil. Já governou o país de 2003 a 2010 e ajudou a criar a Constituição de 1988 como deputado.",
       "kpis": {
         "anos_vida_publica": 46,
         "projetos_apresentados": 1840,
@@ -30,59 +42,77 @@
         "cargo_atual": "Presidente da República"
       },
       "radar_foco": [
-        { "eixo": "Economia", "valor": 86 },
-        { "eixo": "Saúde", "valor": 90 },
-        { "eixo": "Educação", "valor": 88 },
-        { "eixo": "Segurança", "valor": 64 },
-        { "eixo": "Meio Ambiente", "valor": 92 },
-        { "eixo": "Gestão Pública", "valor": 82 }
+        {
+          "eixo": "Economia e Emprego",
+          "valor": 86
+        },
+        {
+          "eixo": "Saúde e SUS",
+          "valor": 90
+        },
+        {
+          "eixo": "Educação",
+          "valor": 88
+        },
+        {
+          "eixo": "Segurança",
+          "valor": 64
+        },
+        {
+          "eixo": "Natureza e Clima",
+          "valor": 92
+        },
+        {
+          "eixo": "Serviços Públicos",
+          "valor": 82
+        }
       ],
       "propostas_por_tema": {
         "economia": {
-          "titulo": "Isenção de IRPF, Salário Mínimo Real e Neoindustrialização Verde",
+          "titulo": "Salário mínimo maior, comida barata e imposto zero até R$ 5 mil",
           "resumo_ia": [
-            "Compromisso com isenção integral de Imposto de Renda Pessoa Física (IRPF) até R$ 5.000, compensada por tributação progressiva sobre lucros e dividendos de altas rendas.",
-            "Política permanente de valorização do salário mínimo com aumento real acima da inflação atrelado ao crescimento anual do PIB.",
-            "Investimentos estruturantes via Novo PAC (Programa de Aceleração do Crescimento) com foco em transição energética e infraestrutura logística."
+            "Não cobrar Imposto de Renda de quem ganha até R$ 5.000 por mês, cobrando mais impostos dos mais ricos e milionários.",
+            "Aumentar o salário mínimo todo ano acima da inflação para o dinheiro render mais no mercado.",
+            "Investir dinheiro público em obras de estradas, energia limpa e moradia popular para gerar empregos rápidos."
           ],
-          "texto_oficial": "O projeto econômico prioriza a estabilidade fiscal com inclusão social, expansão do mercado consumidor interno, fortalecimento das estatais estratégicas e reindustrialização sustentável baseada em inovação e energia limpa.",
-          "fonte_documento": "Diretrizes de Governo Registradas no TSE",
+          "texto_oficial": "Foco em fortalecer o bolso do trabalhador, segurar o preço dos alimentos essenciais, gerar empregos com obras públicas e fazer os mais ricos pagarem uma fatia justa de impostos.",
+          "fonte_documento": "Plano Oficial no TSE",
           "pagina_documento": 11,
           "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
         },
         "saude": {
-          "titulo": "Fortalecimento Integral do SUS, Mais Médicos e Farmácia Popular",
+          "titulo": "Fortalecer o SUS de graça, Mais Médicos e remédios sem custo",
           "resumo_ia": [
-            "Expansão e consolidação do Programa Mais Médicos com prioridade para periferias urbanas, regiões remotas e comunidades indígenas.",
-            "Ampliação da gratuidade do Farmácia Popular para medicamentos essenciais de hipertensão, diabetes, asma e saúde integral da mulher.",
-            "Digitalização integrada da rede pública através do Meu SUS Digital e mutirões regionais para redução de filas de cirurgias eletivas."
+            "Trazer mais profissionais pelo programa Mais Médicos para postos de saúde de bairros afastados e do interior.",
+            "Dar de graça no Farmácia Popular os remédios de pressão alta, diabetes, asma e saúde da mulher.",
+            "Fazer mutirões nos hospitais para acabar com as filas de espera por cirurgias e consultas com especialistas."
           ],
-          "texto_oficial": "Defesa inegociável do Sistema Único de Saúde (SUS) como patrimônio público universal e gratuito, com fomento ao Complexo Econômico-Industrial da Saúde para reduzir a dependência externa de insumos e vacinas.",
-          "fonte_documento": "Diretrizes de Governo Registradas no TSE",
+          "texto_oficial": "Manter o SUS 100% público, gratuito e universal, sem privatizar hospitais, e produzir remédios e vacinas no próprio Brasil para não depender de outros países.",
+          "fonte_documento": "Plano Oficial no TSE",
           "pagina_documento": 18,
           "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
         },
         "educacao": {
-          "titulo": "Pé-de-Meia, Expansão dos Institutos Federais e Tempo Integral",
+          "titulo": "Poupança para alunos não largarem a escola e mais escolas técnicas",
           "resumo_ia": [
-            "Consolidação nacional do Programa Pé-de-Meia (poupança escolar) para combater o abandono de jovens no Ensino Médio da rede pública.",
-            "Construção de 100 novos campi de Institutos Federais de Educação, Ciência e Tecnologia (IFs) integrados ao mercado de trabalho técnico.",
-            "Apoio técnico e financeiro federal aos municípios e estados para universalização progressiva das escolas em tempo integral."
+            "Pagar uma ajuda em dinheiro (Pé-de-Meia) todo mês para estudantes pobres continuarem estudando até concluir o ensino médio.",
+            "Construir 100 novas escolas técnicas federais (IFs) para o jovem aprender uma profissão e conseguir trabalho logo.",
+            "Ajudar prefeituras e governos a deixar as crianças na escola em tempo integral (manhã e tarde com almoço garantido)."
           ],
-          "texto_oficial": "Articulação de compromisso nacional pela alfabetização na idade certa, valorização dos profissionais da educação com fortalecimento do piso do magistério e ampliação do acesso ao ensino técnico e superior.",
-          "fonte_documento": "Diretrizes de Governo Registradas no TSE",
+          "texto_oficial": "Garantir que toda criança aprenda a ler e escrever na idade certa, valorizar os professores com salários dignos e abrir portas para os jovens entrarem na faculdade e no curso técnico.",
+          "fonte_documento": "Plano Oficial no TSE",
           "pagina_documento": 25,
           "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
         },
         "seguranca": {
-          "titulo": "SUSP Integrado, Controle de Armas e Asfixia Financeira de Facções",
+          "titulo": "Menos armas na rua, inteligência da polícia e combater o dinheiro do crime",
           "resumo_ia": [
-            "Fortalecimento do Sistema Único de Segurança Pública (SUSP) integrando inteligência entre Polícia Federal e polícias civis e militares dos estados.",
-            "Política de controle rigoroso da circulação e aquisição civil de armas de fogo e munições de grosso calibre.",
-            "Foco estratégico na descapitalização de facções criminosas e combate à lavagem de dinheiro via atuação conjunta da PF com COAF e Receita."
+            "Apertar as regras e o controle sobre quem compra e anda com armas de fogo e munições pesadas.",
+            "Fazer a Polícia Federal e a Receita Federal rastrearem o dinheiro dos chefes de facções para tirar o patrimônio deles.",
+            "Integrar as polícias dos estados com computadores e câmeras para investigar com mais inteligência e menos mortes."
           ],
-          "texto_oficial": "Enfrentamento qualificado ao crime organizado nacional e transnacional através de inteligência e cooperação federativa, com redução da letalidade policial e políticas sociais integradas de prevenção à violência nas periferias.",
-          "fonte_documento": "Diretrizes de Governo Registradas no TSE",
+          "texto_oficial": "Segurança focada em prender os líderes do crime organizado, combater a entrada de fuzis e drogas nas fronteiras e oferecer oportunidades sociais para tirar os jovens da mira da violência.",
+          "fonte_documento": "Plano Oficial no TSE",
           "pagina_documento": 33,
           "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
         }
@@ -94,71 +124,89 @@
       "nome_urna": "Flávio Bolsonaro",
       "numero": "22",
       "partido": "PL - Partido Liberal",
-      "coligacao": "Aliança pela Liberdade / Coligação de Direita",
-      "vice": "A ser homologado em convenção oficial (articulações com aliados de centro-direita)",
+      "coligacao": "Aliança pela Liberdade",
+      "vice": "Alfredo Gaspar (PL) - Deputado Federal e ex-Promotor de Justiça",
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Senador_Fl%C3%A1vio_Bolsonaro.jpg/800px-Senador_Fl%C3%A1vio_Bolsonaro.jpg",
       "cor_tema": "#16a34a",
-      "historico_resumo": "Senador da República pelo Rio de Janeiro (2019-atualmente) e Deputado Estadual na ALERJ por 4 mandatos (2003-2019).",
+      "historico_resumo": "Senador da República pelo Rio de Janeiro. Foi deputado estadual por 16 anos e é formado em Direito.",
       "kpis": {
         "anos_vida_publica": 23,
         "projetos_apresentados": 445,
         "leis_aprovadas_autor_relator": 28,
-        "cargo_atual": "Senador da República (RJ)"
+        "cargo_atual": "Senador da República"
       },
       "radar_foco": [
-        { "eixo": "Economia", "valor": 94 },
-        { "eixo": "Saúde", "valor": 60 },
-        { "eixo": "Educação", "valor": 64 },
-        { "eixo": "Segurança", "valor": 96 },
-        { "eixo": "Meio Ambiente", "valor": 52 },
-        { "eixo": "Gestão Pública", "valor": 88 }
+        {
+          "eixo": "Economia e Emprego",
+          "valor": 94
+        },
+        {
+          "eixo": "Saúde e SUS",
+          "valor": 60
+        },
+        {
+          "eixo": "Educação",
+          "valor": 64
+        },
+        {
+          "eixo": "Segurança",
+          "valor": 96
+        },
+        {
+          "eixo": "Natureza e Clima",
+          "valor": 52
+        },
+        {
+          "eixo": "Serviços Públicos",
+          "valor": 88
+        }
       ],
       "propostas_por_tema": {
         "economia": {
-          "titulo": "Enxugamento do Estado, Privatizações e Desoneração da Produção",
+          "titulo": "Cortar gastos do governo, privatizar estatais e diminuir impostos das empresas",
           "resumo_ia": [
-            "Corte linear de despesas administrativas da máquina federal com redução substantiva do número de ministérios e cargos comissionados.",
-            "Programa contínuo de concessões e desestatização de empresas públicas federais para atração de capitais privados.",
-            "Defesa da desoneração da folha de pagamento para setores geradores de empregos e simplificação tributária com travas de teto de alíquota."
+            "Cortar ministérios e cargos políticos em Brasília para sobrar mais dinheiro para o país sem precisar aumentar tributos.",
+            "Vender estatais e passar estradas e portos para a iniciativa privada administrar e investir com mais rapidez.",
+            "Reduzir encargos na folha de pagamento para que os patrões e o agronegócio consigam contratar mais pessoas com carteira assinada."
           ],
-          "texto_oficial": "Prioridade irrestrita à liberdade econômica, segurança jurídica para atração de investimentos privados, responsabilidade fiscal com teto de gastos rígido, desregulamentação do mercado e valorização do agronegócio.",
-          "fonte_documento": "Diretrizes Programáticas do Partido Liberal (PL)",
+          "texto_oficial": "Dar total liberdade para quem quer abrir negócio e trabalhar, diminuir as regras burocráticas do governo, atrair empresas de fora e apoiar com força os produtores do campo.",
+          "fonte_documento": "Diretrizes Oficiais do Partido Liberal (PL)",
           "pagina_documento": 14,
           "link_plano_tse": "https://www25.senado.leg.br/web/senadores/senador/-/perfil/5894"
         },
         "saude": {
-          "titulo": "Parcerias Público-Privadas (PPPs) e Vouchers em Clínicas Particulares",
+          "titulo": "Parcerias com hospitais particulares e vales para exames rápidos",
           "resumo_ia": [
-            "Estímulo a contratos de gestão de hospitais públicos por Organizações Sociais (OSs) com metas estritas de resolutividade médica.",
-            "Instituição de programa de vouchers emergenciais para exames e consultas especializadas na rede privada para desafogar o SUS.",
-            "Descentralização dos repasses do Ministério da Saúde com maior autonomia orçamentária direta para as prefeituras e secretarias locais."
+            "Passar a administração de hospitais públicos para empresas e organizações especializadas com metas de atendimento ágil.",
+            "Criar convênios e vales para a população fazer exames e consultas urgentes em clínicas particulares quando o posto demorar.",
+            "Mandar o dinheiro da saúde direto para os prefeitos sem travas ou burocracia de Brasília."
           ],
-          "texto_oficial": "Modernização da assistência médica baseada em eficiência de gestão privada, remuneração profissional por desempenho clínico e incentivo à livre iniciativa em serviços de telemedicina e diagnóstico.",
-          "fonte_documento": "Diretrizes Programáticas do Partido Liberal (PL)",
+          "texto_oficial": "Usar a rapidez e a tecnologia da rede privada para desafogar o SUS, pagar médicos por resultado de consultas e permitir consultas pelo celular (telemedicina) em qualquer cidade.",
+          "fonte_documento": "Diretrizes Oficiais do Partido Liberal (PL)",
           "pagina_documento": 20,
           "link_plano_tse": "https://www25.senado.leg.br/web/senadores/senador/-/perfil/5894"
         },
         "educacao": {
-          "titulo": "Escolas Cívico-Militares, Ênfase em Exatas (STEM) e Ensino Técnico",
+          "titulo": "Escolas cívico-militares, foco em português e matemática e sem ideologia",
           "resumo_ia": [
-            "Retomada e ampliação do Programa Nacional das Escolas Cívico-Militares (Pnecim) em regime de adesão voluntária pelos estados e municípios.",
-            "Reformulação dos parâmetros curriculares com foco prioritário em Língua Portuguesa, Matemática e Ciências Básicas.",
-            "Garantia de neutralidade política e ideológica em sala de aula com estímulo à formação técnica e profissionalizante imediata."
+            "Ampliar escolas cívico-militares com apoio de policiais e militares para garantir ordem e respeito em sala.",
+            "Focar o ensino no que mais importa para o futuro: ler bem, contas de matemática, ciências e computação.",
+            "Impedir debates políticos ou ideológicos nas escolas e apoiar famílias que preferem ensinar os filhos em casa (homeschooling)."
           ],
-          "texto_oficial": "Resgate da autoridade em sala de aula, foco na excelência acadêmica sem contaminação ideológica, apoio ao ensino domiciliar regulamentado e formação de jovens diretamente capacitados para o mercado de trabalho produtivo.",
-          "fonte_documento": "Diretrizes Programáticas do Partido Liberal (PL)",
+          "texto_oficial": "Resgatar a autoridade dos professores em sala, exigir disciplina dos alunos e preparar os estudantes do ensino médio para conseguir emprego rápido em cursos técnicos.",
+          "fonte_documento": "Diretrizes Oficiais do Partido Liberal (PL)",
           "pagina_documento": 27,
           "link_plano_tse": "https://www25.senado.leg.br/web/senadores/senador/-/perfil/5894"
         },
         "seguranca": {
-          "titulo": "Fim das Saidinhas, Retaguarda Jurídica Policial e Legítima Defesa",
+          "titulo": "Fim total de saidinha de presos, apoio total aos policiais e porte de armas",
           "resumo_ia": [
-            "Fim integral de saídas temporárias de presos e endurecimento das regras de progressão de regime prisional para condenados por crimes graves.",
-            "Garantia de excludente de ilicitude ampliada e assistência jurídica integral do Estado a policiais envolvidos em confrontos armados.",
-            "Garantia do direito de legítima defesa do cidadão com simplificação de posse e porte de armas de fogo para CACs e residentes rurais."
+            "Acabar de vez com saídas temporárias de presos e fazer bandidos perigosos cumprirem a pena inteira trancados na cadeia.",
+            "Dar proteção jurídica na Justiça para policiais que agirem em confrontos armados, sem que sejam perseguidos.",
+            "Facilitar a posse e o porte de armas para o cidadão comum de bem, atiradores (CACs) e produtores rurais se defenderem."
           ],
-          "texto_oficial": "Tolerância zero com a criminalidade organizada violenta, isolamento rigoroso de facções criminosas em presídios de segurança máxima e apoio incondicional institucional e operacional às forças de segurança pública.",
-          "fonte_documento": "Diretrizes Programáticas do Partido Liberal (PL)",
+          "texto_oficial": "Tolerância zero contra bandidos e facções, manter líderes criminosos isolados em presídios de segurança máxima e dar apoio absoluto aos policiais em serviço nas ruas.",
+          "fonte_documento": "Diretrizes Oficiais do Partido Liberal (PL)",
           "pagina_documento": 35,
           "link_plano_tse": "https://www25.senado.leg.br/web/senadores/senador/-/perfil/5894"
         }
@@ -167,88 +215,88 @@
   ],
   "votacoes_historicas": [
     {
-      "materia": "Reforma Tributária sobre o Consumo (EC 132/2023)",
-      "tema": "Economia e Sistema Tributário",
-      "descricao": "Unificação histórica de tributos sobre o consumo (PIS, Cofins, IPI, ICMS e ISS) em IVA Dual (CBS e IBS), com desoneração integral da cesta básica e cashback para famílias de baixa renda.",
-      "data": "Novembro/2023",
+      "materia": "Reforma dos Impostos (Juntar impostos e comida com imposto zero)",
+      "tema": "Economia e Compras",
+      "descricao": "Juntou 5 impostos complicados em apenas 1 ou 2, zerou os impostos de toda a comida da cesta básica e criou devolução de dinheiro para quem é de baixa renda.",
+      "data": "Aprovada em 2023",
       "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158586",
       "candidato_1": {
-        "posicionamento": "Articulou e Sancionou",
+        "posicionamento": "Apoiou e Aprovou",
         "tipo_badge": "favoravel",
-        "argumentacao": "Defendeu a reforma como marco estruturante para destravar a produtividade, eliminar a guerra fiscal entre estados e garantir simplificação com justiça social via alíquota zero para alimentos essenciais."
+        "argumentacao": "Defendeu que o Brasil precisava dessa mudança urgente para descomplicar a vida de quem compra e vende, e garantiu arroz, feijão e carnes sem imposto para o povo."
       },
       "candidato_2": {
-        "posicionamento": "Votou Contra no Senado",
+        "posicionamento": "Votou Contra",
         "tipo_badge": "contrario",
-        "argumentacao": "Argumentou que a reforma gerou incerteza com período de transição longo, risco de aumento de carga tributária final sobre serviços e comércio, e excesso de setores beneficiados com regimes diferenciados."
+        "argumentacao": "Disse que a reforma ficou cheia de regras confusas e corre o risco de aumentar o preço final de serviços do dia a dia (como escolas particulares, médicos e academias)."
       }
     },
     {
-      "materia": "Tributação de Fundos Exclusivos e Offshores (Lei 14.754/2023)",
-      "tema": "Tributação e Justiça Fiscal",
-      "descricao": "Instituição de tributação periódica ('come-cotas') sobre fundos fechados de alta renda e regulamentação da tributação de investimentos mantidos por pessoas físicas no exterior (offshores).",
-      "data": "Dezembro/2023",
-      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160100",
-      "candidato_1": {
-        "posicionamento": "Propositor e Sancionou",
-        "tipo_badge": "favoravel",
-        "argumentacao": "Defendeu a medida como imperativo de equidade fiscal para taxar rendimentos de super-ricos que tinham privilégios de diferimento tributário, utilizando a receita para financiar a correção da faixa de isenção do IRPF."
-      },
-      "candidato_2": {
-        "posicionamento": "Votou Contra no Senado",
-        "tipo_badge": "contrario",
-        "argumentacao": "Sustentou que a taxação retroativa de fundos configurou aumento de impostos que desestimula a permanência de grandes capitais no país, defendendo que o equilíbrio fiscal deve ser obtido via redução de despesas públicas."
-      }
-    },
-    {
-      "materia": "Marco Temporal de Terras Indígenas (Lei 14.701/2023)",
-      "tema": "Direitos Indígenas e Meio Ambiente",
-      "descricao": "Estabelecimento de que povos indígenas apenas teriam direito à demarcação de terras que já estivessem ocupando na data da promulgação da Constituição Federal (5 de outubro de 1988).",
-      "data": "Setembro/2023",
-      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157774",
-      "candidato_1": {
-        "posicionamento": "Vetou o Marco Temporal",
-        "tipo_badge": "veto",
-        "argumentacao": "Vetou a tese por considerá-la inconstitucional e violadora de direitos originários dos povos indígenas (em linha com decisão do STF), argumentando a necessidade de preservação da floresta e de comunidades originárias."
-      },
-      "candidato_2": {
-        "posicionamento": "Votou a Favor da Tese",
-        "tipo_badge": "favoravel",
-        "argumentacao": "Defendeu a vigência do marco temporal como garantia fundamental de segurança jurídica para propriedades produtivas no campo, pacificando conflitos fundiários e assegurando previsibilidade ao agronegócio."
-      }
-    },
-    {
-      "materia": "Restrição às Saídas Temporárias de Detentos (Lei 14.843/2024)",
-      "tema": "Segurança Pública e Execução Penal",
-      "descricao": "Alteração da Lei de Execução Penal para extinguir o benefício da saída temporária de presos em datas comemorativas, mantendo autorização apenas para atividades de frequência a cursos de instrução ou ensino.",
-      "data": "Março/2024",
+      "materia": "Fim da 'Saidinha' de Presos em Feriados",
+      "tema": "Segurança e Cadeia",
+      "descricao": "Mudou a lei para proibir que presos condenados saiam da cadeia em feriados como Dia das Mães, Páscoa e Natal.",
+      "data": "Aprovada em 2024",
       "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/154406",
       "candidato_1": {
-        "posicionamento": "Vetou Restrição Familiar",
+        "posicionamento": "Quis manter para quem estuda",
         "tipo_badge": "veto",
-        "argumentacao": "Aplicou veto parcial para preservar a visita a familiares de detentos do semiaberto que cometeram crimes sem violência, apontando o princípio da ressocialização progressiva; o veto foi posteriormente derrubado pelo Congresso."
+        "argumentacao": "Quis manter a saída apenas para presos de bom comportamento que estivessem estudando ou fazendo cursos, mas o Congresso rejeitou o pedido e proibiu as saídas."
       },
       "candidato_2": {
-        "posicionamento": "Relatou e Votou a Favor",
+        "posicionamento": "Liderou e Votou a Favor",
         "tipo_badge": "favoravel",
-        "argumentacao": "Atuou como relator do projeto na Comissão de Segurança do Senado, liderando a votação pelo fim integral das 'saidinhas', sustentando que o benefício expunha a população ao risco de reincidência e impunidade."
+        "argumentacao": "Foi o relator do projeto no Senado e defendeu acabar com 100% das saidinhas, afirmando que muitos presos cometiam crimes de novo ou fugiam da cadeia durante os feriados."
       }
     },
     {
-      "materia": "Marco Legal do Saneamento Básico (Lei 14.026/2020)",
-      "tema": "Infraestrutura e Concessões",
-      "descricao": "Abertura obrigatória do setor de água e esgoto a processos licitatórios e atração de investimentos privados, com metas de universalização de atendimento até 2033.",
-      "data": "Junho/2020",
-      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/140540",
+      "materia": "Imposto sobre Investimentos de Milionários e Contas no Exterior",
+      "tema": "Dinheiro e Riqueza",
+      "descricao": "Passou a cobrar imposto periódico de quem tem fortunas guardadas em fundos exclusivos de investimento e dinheiro em empresas no exterior (offshores).",
+      "data": "Aprovada em 2023",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160100",
       "candidato_1": {
-        "posicionamento": "Contrário à Privatização",
-        "tipo_badge": "contrario",
-        "argumentacao": "Posicionou-se historicamente contra a privatização do saneamento; como Presidente em 2023, assinou decretos para flexibilizar prazos e permitir que empresas públicas estaduais continuassem a prestar serviços sem licitação."
+        "posicionamento": "Criou e Sancionou",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Defendeu que não era justo o trabalhador comum pagar imposto todo mês enquanto os super-ricos deixavam milhões rendendo sem pagar nada ao país."
       },
       "candidato_2": {
-        "posicionamento": "Votou a Favor da Lei",
+        "posicionamento": "Votou Contra",
+        "tipo_badge": "contrario",
+        "argumentacao": "Afirmou que criar esse imposto faz os investidores tirarem o dinheiro do Brasil para aplicar em outros países, e que o governo deveria era cortar gastos públicos."
+      }
+    },
+    {
+      "materia": "Demarcação de Terras Indígenas (Marco Temporal)",
+      "tema": "Campo e Meio Ambiente",
+      "descricao": "Discussão sobre se os indígenas só têm direito a terras que já ocupavam no dia 5 de outubro de 1988 (quando nasceu a Constituição) ou se novas terras podem ser demarcadas.",
+      "data": "Votada em 2023",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157774",
+      "candidato_1": {
+        "posicionamento": "Contra a trava de 1988",
+        "tipo_badge": "veto",
+        "argumentacao": "Disse que os indígenas são donos naturais das terras e foram expulsos ao longo da história, então limitar pela data de 1988 prejudica a preservação das florestas."
+      },
+      "candidato_2": {
+        "posicionamento": "Apoiou a trava de 1988",
         "tipo_badge": "favoravel",
-        "argumentacao": "Votou favorável no Senado, argumentando que o modelo estatal não possuía capacidade financeira para universalizar o tratamento de água e esgoto no país e que a competição privada aceleraria investimentos bilionários."
+        "argumentacao": "Defendeu a data limite para dar segurança a fazendeiros e agricultores, para que ninguém corra o risco de perder sua propriedade produtiva de uma hora para a outra."
+      }
+    },
+    {
+      "materia": "Privatização de Água e Esgoto (Marco do Saneamento)",
+      "tema": "Serviços da Cidade",
+      "descricao": "Permitiu que empresas privadas disputem concorrências para levar água tratada e encanamento de esgoto para as cidades brasileiras.",
+      "data": "Aprovada em 2020",
+      "fonte_oficial": "https://www25.senado.leg.br/web/atividade/materias/-/materia/140540",
+      "candidato_1": {
+        "posicionamento": "Apoio a Empresas Públicas",
+        "tipo_badge": "contrario",
+        "argumentacao": "Defende que água é direito humano básico e não deve virar mercadoria privada com contas caras; quis manter a prioridade com as companhias de saneamento públicas."
+      },
+      "candidato_2": {
+        "posicionamento": "Apoiou a Entrada de Privadas",
+        "tipo_badge": "favoravel",
+        "argumentacao": "Defendeu que os governos não têm dinheiro para levar esgoto a quase metade da população e que a chegada de empresas privadas acelera as obras com dinheiro novo."
       }
     }
   ]

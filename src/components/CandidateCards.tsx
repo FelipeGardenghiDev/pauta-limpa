@@ -28,20 +28,20 @@ interface CandidateCardsProps {
 
 export default function CandidateCards({ candidatos }: CandidateCardsProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 my-8">
       {candidatos.map((candidato, index) => {
         const isFirst = index === 0; // Lula (Vermelho) vs Flávio Bolsonaro (Verde)
         return (
           <div
             key={candidato.id}
-            className={`relative rounded-3xl border bg-white dark:bg-zinc-900 p-6 sm:p-7 shadow-sm transition hover:shadow-md flex flex-col justify-between ${
+            className={`relative rounded-3xl border bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs transition hover:shadow-md flex flex-col justify-between ${
               isFirst ? 'border-red-200 dark:border-red-950/60' : 'border-emerald-200 dark:border-emerald-950/60'
             }`}
           >
             <div>
               {/* Topo: Foto, Nome de Urna e Número */}
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-center gap-4">
+              <div className="flex items-start justify-between gap-3 sm:gap-4">
+                <div className="flex items-center gap-3 sm:gap-4">
                   <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 shrink-0 shadow-xs">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -54,7 +54,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
 
                   <div>
                     <span
-                      className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase ${
+                      className={`inline-block px-3 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase ${
                         isFirst
                           ? 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300'
                           : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
@@ -72,42 +72,44 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                 </div>
 
                 <div
-                  className={`flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl text-2xl sm:text-3xl font-black text-white shadow-sm shrink-0 ${
+                  className={`flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl text-2xl sm:text-3xl font-black text-white shadow-xs shrink-0 ${
                     isFirst ? 'bg-red-600' : 'bg-emerald-600'
                   }`}
-                  aria-label={`Número eleitoral: ${candidato.numero}`}
+                  aria-label={`Número na urna: ${candidato.numero}`}
                 >
                   {candidato.numero}
                 </div>
               </div>
 
               {/* Informações Básicas da Chapa */}
-              <div className="mt-5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800 pt-4 text-xs text-zinc-600 dark:text-zinc-300">
+              <div className="mt-5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800 pt-4 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
                 <p>
-                  <span className="font-semibold text-zinc-800 dark:text-zinc-200">Candidato a Vice:</span>{' '}
-                  {candidato.vice}
+                  <span className="font-semibold text-zinc-900 dark:text-zinc-100">Vice na chapa:</span>{' '}
+                  <strong className={isFirst ? 'text-red-700 dark:text-red-400 font-semibold' : 'text-emerald-700 dark:text-emerald-400 font-semibold'}>
+                    {candidato.vice}
+                  </strong>
                 </p>
                 <p>
-                  <span className="font-semibold text-zinc-800 dark:text-zinc-200">Coligação:</span>{' '}
+                  <span className="font-semibold text-zinc-900 dark:text-zinc-100">Coligação:</span>{' '}
                   {candidato.coligacao}
                 </p>
-                <p className="pt-1 text-xs italic text-zinc-500 dark:text-zinc-400">
-                  "{candidato.historico_resumo}"
+                <p className="pt-1.5 text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                  {candidato.historico_resumo}
                 </p>
               </div>
             </div>
 
-            {/* Indicadores de BI / Trajetória Pública Simétrica */}
+            {/* Indicadores de BI em Linguagem Simples */}
             <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800">
               <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-3">
-                Trajetória Pública Verificada (Fontes Oficiais)
+                Histórico na Política (Fontes Oficiais)
               </h4>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
                 <div className="rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3 border border-zinc-100 dark:border-zinc-800">
                   <div className="flex items-center gap-1.5 text-zinc-500 text-xs">
                     <Calendar className="w-3.5 h-3.5" aria-hidden="true" />
-                    <span>Vida Pública</span>
+                    <span>Tempo na política</span>
                   </div>
                   <p className="mt-1 text-lg font-bold text-zinc-900 dark:text-white">
                     {candidato.kpis.anos_vida_publica} <span className="text-xs font-normal text-zinc-500">anos</span>
@@ -117,7 +119,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                 <div className="rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3 border border-zinc-100 dark:border-zinc-800">
                   <div className="flex items-center gap-1.5 text-zinc-500 text-xs">
                     <FileText className="w-3.5 h-3.5" aria-hidden="true" />
-                    <span>Matérias / Atos</span>
+                    <span>Projetos e Atos</span>
                   </div>
                   <p className="mt-1 text-lg font-bold text-zinc-900 dark:text-white">
                     {candidato.kpis.projetos_apresentados}
@@ -137,9 +139,9 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                 <div className="rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3 border border-zinc-100 dark:border-zinc-800">
                   <div className="flex items-center gap-1.5 text-zinc-500 text-xs">
                     <Briefcase className="w-3.5 h-3.5" aria-hidden="true" />
-                    <span>Cargo Atual</span>
+                    <span>O que faz hoje</span>
                   </div>
-                  <p className="mt-1 text-xs font-bold text-zinc-900 dark:text-white line-clamp-1" title={candidato.kpis.cargo_atual}>
+                  <p className="mt-1 text-xs sm:text-sm font-bold text-zinc-900 dark:text-white truncate" title={candidato.kpis.cargo_atual}>
                     {candidato.kpis.cargo_atual}
                   </p>
                 </div>

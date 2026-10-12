@@ -34,7 +34,7 @@ export default function Navbar({ ano, turno, dataAtualizacao }: NavbarProps) {
 
         <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
           <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-          <span>Última auditoria oficial: <strong className="text-zinc-700 dark:text-zinc-300">{dataAtualizacao}</strong></span>
+          <span>Dados conferidos em: <strong className="text-zinc-700 dark:text-zinc-300">{dataAtualizacao}</strong></span>
         </div>
       </div>
     </header>

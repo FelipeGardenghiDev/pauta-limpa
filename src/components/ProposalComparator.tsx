@@ -25,10 +25,10 @@ interface ProposalComparatorProps {
 }
 
 const TEMAS = [
-  { id: 'economia', label: 'Economia e Impostos', icon: DollarSign },
-  { id: 'saude', label: 'Saúde Pública (SUS)', icon: HeartPulse },
-  { id: 'educacao', label: 'Educação e Juventude', icon: GraduationCap },
-  { id: 'seguranca', label: 'Segurança e Justiça', icon: Shield },
+  { id: 'economia', label: 'Dinheiro e Emprego', icon: DollarSign },
+  { id: 'saude', label: 'Saúde e Hospitais', icon: HeartPulse },
+  { id: 'educacao', label: 'Escolas e Jovens', icon: GraduationCap },
+  { id: 'seguranca', label: 'Segurança e Polícia', icon: Shield },
 ];
 
 export default function ProposalComparator({ candidatos }: ProposalComparatorProps) {
@@ -49,28 +49,28 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
   const propB = candB?.propostas_por_tema[temaAtivo];
 
   return (
-    <section className="my-10 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/40 p-6 md:p-8">
+    <section className="my-10 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 p-5 sm:p-7 md:p-8">
       {/* Cabeçalho do Comparador */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300 text-xs">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-xs">
               <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
             </span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-amber-600 dark:text-amber-400">
-              Síntese Factual das Diretrizes
+            <span className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+              Promessas de Campanha
             </span>
           </div>
           <h3 className="mt-1 text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
-            Comparativo de Planos de Governo
+            O que cada um quer fazer no governo
           </h3>
-          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-            Resumos padronizados a partir das diretrizes oficiais protocoladas na Justiça Eleitoral (TSE).
+          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+            Resumo em palavras fáceis direto dos documentos entregues pelos candidatos ao TSE.
           </p>
         </div>
 
-        {/* Seletor de Temas (Scroll horizontal suave no mobile) */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full" role="tablist" aria-label="Eixos temáticos de propostas">
+        {/* Seletor de Temas (Grid responsivo sem nenhuma barra de rolagem horizontal) */}
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2" role="tablist" aria-label="Temas das propostas">
           {TEMAS.map(tema => {
             const Icon = tema.icon;
             const isSelected = temaAtivo === tema.id;
@@ -80,13 +80,13 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 role="tab"
                 aria-selected={isSelected}
                 onClick={() => setTemaAtivo(tema.id)}
-                className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium whitespace-nowrap transition cursor-pointer ${
+                className={`flex items-center justify-center sm:justify-start gap-2 px-3.5 py-2.5 rounded-xl text-xs font-medium transition cursor-pointer text-center sm:text-left ${
                   isSelected
-                    ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                    ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs font-bold'
                     : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700'
                 }`}
               >
-                <Icon className="w-4 h-4" aria-hidden="true" />
+                <Icon className="w-4 h-4 shrink-0" aria-hidden="true" />
                 <span>{tema.label}</span>
               </button>
             );
@@ -95,26 +95,26 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
       </div>
 
       {/* Grid Lado a Lado */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
         {/* Candidato A (Lula) */}
-        <div className="rounded-2xl border border-red-100 dark:border-red-950/40 bg-white dark:bg-zinc-900 p-6 shadow-xs flex flex-col justify-between">
+        <div className="rounded-2xl border border-red-200 dark:border-red-950/60 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
               <span className="text-sm font-bold text-red-600 dark:text-red-400">
                 {candA.nome_urna} ({candA.numero})
               </span>
-              <span className="text-xs text-zinc-400">Pág. {propA?.pagina_documento} do TSE</span>
+              <span className="text-xs text-zinc-400">Pág. {propA?.pagina_documento} do plano oficial</span>
             </div>
 
-            <h4 className="mt-4 text-base font-semibold text-zinc-900 dark:text-white">
+            <h4 className="mt-3 text-base sm:text-lg font-bold text-zinc-900 dark:text-white leading-snug">
               {propA?.titulo}
             </h4>
 
-            {/* Bullets resumidos */}
-            <ul className="mt-3 space-y-2.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
+            {/* Bullets fáceis */}
+            <ul className="mt-3.5 space-y-2.5 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
               {propA?.resumo_ia.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" aria-hidden="true" />
+                <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-red-600 shrink-0" aria-hidden="true" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -125,9 +125,9 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             <button
               onClick={() => toggleIntegral(candA.id)}
               aria-expanded={!!mostrarTextoIntegral[candA.id]}
-              className="flex items-center justify-between w-full text-xs font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer py-1"
+              className="flex items-center justify-between w-full text-xs font-semibold text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 cursor-pointer py-1.5"
             >
-              <span>{mostrarTextoIntegral[candA.id] ? 'Recolher trecho oficial' : 'Ver citação integral do plano'}</span>
+              <span>{mostrarTextoIntegral[candA.id] ? 'Fechar trecho oficial' : 'Ler trecho oficial registrado'}</span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${
                   mostrarTextoIntegral[candA.id] ? 'rotate-180' : ''
@@ -137,7 +137,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             </button>
 
             {mostrarTextoIntegral[candA.id] && (
-              <div className="mt-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/60 p-3 text-xs italic text-zinc-600 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800 leading-relaxed">
+              <div className="mt-2 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3.5 text-xs italic text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800 leading-relaxed">
                 "{propA?.texto_oficial}"
               </div>
             )}
@@ -148,33 +148,33 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 href={propA?.link_plano_tse}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-red-600 dark:text-red-400 hover:underline"
+                className="flex items-center gap-1 text-red-600 dark:text-red-400 font-medium hover:underline"
               >
-                Abrir TSE <ExternalLink className="w-3 h-3" aria-hidden="true" />
+                Abrir no TSE <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
             </div>
           </div>
         </div>
 
         {/* Candidato B (Flávio Bolsonaro) */}
-        <div className="rounded-2xl border border-emerald-100 dark:border-emerald-900/40 bg-white dark:bg-zinc-900 p-6 shadow-xs flex flex-col justify-between">
+        <div className="rounded-2xl border border-emerald-200 dark:border-emerald-950/60 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
               <span className="text-sm font-bold text-emerald-600 dark:text-emerald-400">
                 {candB.nome_urna} ({candB.numero})
               </span>
-              <span className="text-xs text-zinc-400">Pág. {propB?.pagina_documento}</span>
+              <span className="text-xs text-zinc-400">Pág. {propB?.pagina_documento} do plano oficial</span>
             </div>
 
-            <h4 className="mt-4 text-base font-semibold text-zinc-900 dark:text-white">
+            <h4 className="mt-3 text-base sm:text-lg font-bold text-zinc-900 dark:text-white leading-snug">
               {propB?.titulo}
             </h4>
 
-            {/* Bullets resumidos */}
-            <ul className="mt-3 space-y-2.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
+            {/* Bullets fáceis */}
+            <ul className="mt-3.5 space-y-2.5 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
               {propB?.resumo_ia.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" aria-hidden="true" />
+                <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-emerald-600 shrink-0" aria-hidden="true" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -185,9 +185,9 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             <button
               onClick={() => toggleIntegral(candB.id)}
               aria-expanded={!!mostrarTextoIntegral[candB.id]}
-              className="flex items-center justify-between w-full text-xs font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer py-1"
+              className="flex items-center justify-between w-full text-xs font-semibold text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 cursor-pointer py-1.5"
             >
-              <span>{mostrarTextoIntegral[candB.id] ? 'Recolher trecho oficial' : 'Ver citação integral do plano'}</span>
+              <span>{mostrarTextoIntegral[candB.id] ? 'Fechar trecho oficial' : 'Ler trecho oficial registrado'}</span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${
                   mostrarTextoIntegral[candB.id] ? 'rotate-180' : ''
@@ -197,7 +197,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             </button>
 
             {mostrarTextoIntegral[candB.id] && (
-              <div className="mt-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/60 p-3 text-xs italic text-zinc-600 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800 leading-relaxed">
+              <div className="mt-2 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3.5 text-xs italic text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800 leading-relaxed">
                 "{propB?.texto_oficial}"
               </div>
             )}
@@ -208,9 +208,9 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 href={propB?.link_plano_tse}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 hover:underline"
+                className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium hover:underline"
               >
-                Abrir Perfil Oficial <ExternalLink className="w-3 h-3" aria-hidden="true" />
+                Abrir no Senado <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
             </div>
           </div>

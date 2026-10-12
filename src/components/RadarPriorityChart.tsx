@@ -64,11 +64,11 @@ export default function RadarPriorityChart({ candidatos }: RadarPriorityChartPro
           Business Intelligence Visual
         </span>
       </div>
-      <h3 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
-        Radar de Foco Temático das Propostas
+      <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+        Onde cada candidato foca mais suas promessas
       </h3>
-      <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-6">
-        Intensidade e densidade de proposições por eixo de governo, calculadas a partir da frequência de metas nos planos registrados no TSE.
+      <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1 mb-6">
+        Quanto mais perto da borda do gráfico, maior é a quantidade de propostas que o candidato tem para aquela área.
       </p>
 
       <div className="h-[360px] w-full">
