@@ -20,14 +20,14 @@ export default function Navbar({ ano, turno, dataAtualizacao }: NavbarProps) {
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold tracking-tight text-base text-zinc-900 dark:text-white">
-                Voto Transparente Brasil
+                Pauta Limpa
               </span>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
                 {ano} • {turno}
               </span>
             </div>
             <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-              Comparador cívico de propostas e histórico público oficial
+              Propostas, histórico de votações e dados oficiais do Brasil
             </p>
           </div>
         </div>

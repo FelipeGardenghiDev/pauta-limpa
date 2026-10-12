@@ -25,8 +25,8 @@ export default function HomePage() {
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-8">
         {/* Banner Hero Cívico */}
         <section className="text-center py-8 md:py-12 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 border border-blue-200 dark:border-blue-800 mb-4">
-            <span>Segurança de Dados • Fontes Primárias do Governo</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 mb-4">
+            <span>Pauta Limpa 2026 • Dados Primários da Câmara e do TSE</span>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-black tracking-tight text-zinc-900 dark:text-white">
@@ -34,7 +34,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-4 text-sm md:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            Uma plataforma aberta e transparente que cruza os <strong>planos de governo registrados no TSE</strong> com as <strong>votações nominais no Congresso Nacional</strong>. Sem viés, sem boatos e sem anúncios.
+            O <strong>Pauta Limpa</strong> cruza os <strong>planos de governo registrados no TSE</strong> com o histórico real de <strong>votações nominais no Congresso Nacional</strong>. Sem ruído, sem viés político e 100% aberto.
           </p>
 
           {/* Navegação Rápida entre Seções */}

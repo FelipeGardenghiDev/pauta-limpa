@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Comparador Presidencial 2026 | Dados Cívicos Oficiais",
-  description: "Compare objetivamente as propostas de governo e o histórico de votações dos candidatos ao 2º turno da Presidência do Brasil com dados do TSE e da Câmara dos Deputados.",
+  title: "Pauta Limpa 2026 | Comparador Presidencial Oficial",
+  description: "Pauta Limpa: compare objetivamente as propostas de governo e o histórico de votações dos candidatos ao 2º turno da Presidência do Brasil com dados do TSE e da Câmara dos Deputados.",
   openGraph: {
-    title: "Comparador Presidencial 2026 | Dados Cívicos Oficiais",
-    description: "Compare objetivamente as propostas e votações dos candidatos com dados do TSE e da Câmara dos Deputados.",
+    title: "Pauta Limpa 2026 | Dados Cívicos Oficiais",
+    description: "Compare propostas e históricos de votações com dados abertos do TSE e da Câmara dos Deputados.",
     type: "website",
     locale: "pt_BR",
   },

@@ -1,6 +1,6 @@
-# 🇧🇷 Comparador Presidencial 2026 (Dados Cívicos Oficiais)
+# 🇧🇷 Pauta Limpa (Eleições 2026)
 
-Uma plataforma cívica, independente e de código aberto para comparação objetiva entre os candidatos do **2º turno da Presidência da República do Brasil (2026)**.
+O **Pauta Limpa** é uma plataforma cívica, independente e de código aberto para comparação objetiva entre os candidatos do **2º turno da Presidência da República do Brasil (2026)**.
 
 ---
 
