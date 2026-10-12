@@ -30,12 +30,12 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 my-8">
       {candidatos.map((candidato, index) => {
-        const isFirst = index === 0; // Lula (Vermelho) vs Flávio Bolsonaro (Verde)
+        const isFirst = index === 0; // Lula (Azul Índigo) vs Flávio Bolsonaro (Âmbar)
         return (
           <div
             key={candidato.id}
             className={`relative rounded-3xl border bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs transition hover:shadow-md flex flex-col justify-between ${
-              isFirst ? 'border-red-200 dark:border-red-950/60' : 'border-emerald-200 dark:border-emerald-950/60'
+              isFirst ? 'border-blue-200 dark:border-blue-900/50' : 'border-amber-200 dark:border-amber-900/50'
             }`}
           >
             <div>
@@ -56,8 +56,8 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                     <span
                       className={`inline-block px-3 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase ${
                         isFirst
-                          ? 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300'
-                          : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
+                          ? 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300'
+                          : 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
                       }`}
                     >
                       {candidato.partido.split(' - ')[0]}
@@ -73,7 +73,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
 
                 <div
                   className={`flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl text-2xl sm:text-3xl font-black text-white shadow-xs shrink-0 ${
-                    isFirst ? 'bg-red-600' : 'bg-emerald-600'
+                    isFirst ? 'bg-blue-600' : 'bg-amber-600'
                   }`}
                   aria-label={`Número na urna: ${candidato.numero}`}
                 >
@@ -85,7 +85,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
               <div className="mt-5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800 pt-4 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
                 <p>
                   <span className="font-semibold text-zinc-900 dark:text-zinc-100">Vice na chapa:</span>{' '}
-                  <strong className={isFirst ? 'text-red-700 dark:text-red-400 font-semibold' : 'text-emerald-700 dark:text-emerald-400 font-semibold'}>
+                  <strong className={isFirst ? 'text-blue-700 dark:text-blue-400 font-semibold' : 'text-amber-700 dark:text-amber-400 font-semibold'}>
                     {candidato.vice}
                   </strong>
                 </p>

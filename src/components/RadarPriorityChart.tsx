@@ -55,13 +55,13 @@ export default function RadarPriorityChart({ candidatos }: RadarPriorityChartPro
   }
 
   return (
-    <section className="my-10 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 md:p-8 shadow-sm">
+    <section className="my-10 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-7 md:p-8 shadow-xs">
       <div className="flex items-center gap-2 mb-2">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300 text-xs">
-          <PieChart className="w-3.5 h-3.5" />
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs">
+          <PieChart className="w-3.5 h-3.5" aria-hidden="true" />
         </span>
-        <span className="text-xs font-semibold uppercase tracking-wider text-purple-600 dark:text-purple-400">
-          Business Intelligence Visual
+        <span className="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">
+          Visualização Comparativa
         </span>
       </div>
       <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
@@ -77,7 +77,7 @@ export default function RadarPriorityChart({ candidatos }: RadarPriorityChartPro
             <PolarGrid stroke="#e4e4e7" strokeDasharray="3 3" />
             <PolarAngleAxis
               dataKey="eixo"
-              tick={{ fill: '#71717a', fontSize: 12, fontWeight: 500 }}
+              tick={{ fill: '#71717a', fontSize: 11, fontWeight: 500 }}
             />
             <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="#a1a1aa" />
             <Tooltip
@@ -93,30 +93,30 @@ export default function RadarPriorityChart({ candidatos }: RadarPriorityChartPro
             <Radar
               name={candA.nome_urna}
               dataKey={candA.nome_urna}
-              stroke="#dc2626"
-              fill="#dc2626"
-              fillOpacity={0.4}
+              stroke="#2563eb"
+              fill="#2563eb"
+              fillOpacity={0.35}
             />
             <Radar
               name={candB.nome_urna}
               dataKey={candB.nome_urna}
-              stroke="#16a34a"
-              fill="#16a34a"
-              fillOpacity={0.4}
+              stroke="#d97706"
+              fill="#d97706"
+              fillOpacity={0.35}
             />
           </RadarChart>
         </ResponsiveContainer>
       </div>
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800 pt-4">
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800 pt-4">
         <div>
-          <span className="font-semibold text-red-600 dark:text-red-400">
+          <span className="font-semibold text-blue-700 dark:text-blue-400">
             {candA.nome_urna}:
           </span>{' '}
           Maior concentração em Saúde Pública (SUS), Meio Ambiente e Educação Básica (Pé-de-Meia).
         </div>
         <div>
-          <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+          <span className="font-semibold text-amber-700 dark:text-amber-400">
             {candB.nome_urna}:
           </span>{' '}
           Maior concentração em Segurança Pública, Desregulamentação Econômica e Privatizações.

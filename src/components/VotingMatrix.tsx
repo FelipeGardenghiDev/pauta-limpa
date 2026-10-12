@@ -85,14 +85,14 @@ export default function VotingMatrix({ votacoes, nomeCand1, nomeCand2 }: VotingM
 
             {/* Grid Comparativo dos Dois Candidatos */}
             <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
-              {/* Coluna Lula */}
+              {/* Coluna Lula (Azul) */}
               <div className="rounded-2xl bg-zinc-50/70 dark:bg-zinc-800/40 p-4 sm:p-5 border border-zinc-100 dark:border-zinc-800 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-zinc-200/60 dark:border-zinc-700/60">
-                    <span className="text-sm font-bold text-red-600 dark:text-red-400">
+                    <span className="text-sm font-bold text-blue-700 dark:text-blue-400">
                       {nomeCand1}
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-50 text-red-700 dark:bg-red-950/60 dark:text-red-300 border border-red-200 dark:border-red-900/40">
+                    <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700">
                       {item.candidato_1.posicionamento}
                     </span>
                   </div>
@@ -103,14 +103,14 @@ export default function VotingMatrix({ votacoes, nomeCand1, nomeCand2 }: VotingM
                 </div>
               </div>
 
-              {/* Coluna Flávio Bolsonaro */}
+              {/* Coluna Flávio Bolsonaro (Âmbar) */}
               <div className="rounded-2xl bg-zinc-50/70 dark:bg-zinc-800/40 p-4 sm:p-5 border border-zinc-100 dark:border-zinc-800 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-zinc-200/60 dark:border-zinc-700/60">
-                    <span className="text-sm font-bold text-emerald-600 dark:text-emerald-400">
+                    <span className="text-sm font-bold text-amber-700 dark:text-amber-400">
                       {nomeCand2}
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-900/40">
+                    <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700">
                       {item.candidato_2.posicionamento}
                     </span>
                   </div>
