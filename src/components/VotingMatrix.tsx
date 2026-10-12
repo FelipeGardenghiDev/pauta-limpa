@@ -71,7 +71,7 @@ export default function VotingMatrix({ votacoes, nomeCand1, nomeCand2 }: VotingM
           <thead className="bg-zinc-50 dark:bg-zinc-800/60 border-b border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-300">
             <tr>
               <th className="py-4 px-4 font-semibold w-1/3">Matéria / Projeto de Lei</th>
-              <th className="py-4 px-4 font-semibold w-1/3 text-blue-600 dark:text-blue-400">
+              <th className="py-4 px-4 font-semibold w-1/3 text-red-600 dark:text-red-400">
                 {nomeCand1}
               </th>
               <th className="py-4 px-4 font-semibold w-1/3 text-emerald-600 dark:text-emerald-400">

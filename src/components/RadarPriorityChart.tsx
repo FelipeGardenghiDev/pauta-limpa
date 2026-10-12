@@ -93,8 +93,8 @@ export default function RadarPriorityChart({ candidatos }: RadarPriorityChartPro
             <Radar
               name={candA.nome_urna}
               dataKey={candA.nome_urna}
-              stroke="#2563eb"
-              fill="#2563eb"
+              stroke="#dc2626"
+              fill="#dc2626"
               fillOpacity={0.4}
             />
             <Radar
@@ -110,16 +110,16 @@ export default function RadarPriorityChart({ candidatos }: RadarPriorityChartPro
 
       <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800 pt-4">
         <div>
-          <span className="font-semibold text-blue-600 dark:text-blue-400">
+          <span className="font-semibold text-red-600 dark:text-red-400">
             {candA.nome_urna}:
           </span>{' '}
-          Maior concentração em Gestão Pública, Modernização Econômica e Educação Básica.
+          Maior concentração em Saúde Pública (SUS), Meio Ambiente e Educação Básica (Pé-de-Meia).
         </div>
         <div>
           <span className="font-semibold text-emerald-600 dark:text-emerald-400">
             {candB.nome_urna}:
           </span>{' '}
-          Maior concentração em Desregulamentação Econômica, Segurança Pública e Desestatizações.
+          Maior concentração em Segurança Pública, Desregulamentação Econômica e Privatizações.
         </div>
       </div>
     </section>

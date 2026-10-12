@@ -112,12 +112,12 @@ export default function AffinityQuiz({ perguntas, nomeCand1, nomeCand2 }: Affini
           <div className="space-y-4">
             <div>
               <div className="flex justify-between text-xs font-semibold mb-1">
-                <span className="text-blue-600 dark:text-blue-400">{nomeCand1}</span>
-                <span className="text-blue-600 dark:text-blue-400">{percCand1}%</span>
+                <span className="text-red-600 dark:text-red-400">{nomeCand1}</span>
+                <span className="text-red-600 dark:text-red-400">{percCand1}%</span>
               </div>
               <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-3 overflow-hidden">
                 <div
-                  className="bg-blue-600 h-3 rounded-full transition-all duration-500"
+                  className="bg-red-600 h-3 rounded-full transition-all duration-500"
                   style={{ width: `${percCand1}%` }}
                 />
               </div>

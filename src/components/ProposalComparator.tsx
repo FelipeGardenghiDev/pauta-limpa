@@ -94,11 +94,11 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
 
       {/* Grid Lado a Lado */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Candidato A */}
-        <div className="rounded-2xl border border-blue-100 dark:border-blue-900/40 bg-white dark:bg-zinc-900 p-6 shadow-sm flex flex-col justify-between">
+        {/* Candidato A (Lula) */}
+        <div className="rounded-2xl border border-red-100 dark:border-red-950/40 bg-white dark:bg-zinc-900 p-6 shadow-sm flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
-              <span className="text-sm font-bold text-blue-600 dark:text-blue-400">
+              <span className="text-sm font-bold text-red-600 dark:text-red-400">
                 {candA.nome_urna} ({candA.numero})
               </span>
               <span className="text-xs text-zinc-400">Pág. {propA?.pagina_documento} do TSE</span>
@@ -112,7 +112,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
             <ul className="mt-3 space-y-2.5 text-xs text-zinc-600 dark:text-zinc-300">
               {propA?.resumo_ia.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500 shrink-0" />
+                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -144,7 +144,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 href={propA?.link_plano_tse}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
+                className="flex items-center gap-1 text-red-600 dark:text-red-400 hover:underline"
               >
                 Abrir TSE <ExternalLink className="w-3 h-3" />
               </a>

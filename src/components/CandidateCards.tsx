@@ -11,6 +11,7 @@ interface Candidate {
   partido: string;
   coligacao: string;
   vice: string;
+  foto: string;
   cor_tema: string;
   historico_resumo: string;
   kpis: {
@@ -29,37 +30,55 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
       {candidatos.map((candidato, index) => {
-        const isFirst = index === 0;
+        const isFirst = index === 0; // Lula (Vermelho) vs Flávio Bolsonaro (Verde)
         return (
           <div
             key={candidato.id}
-            className={`relative rounded-2xl border bg-white dark:bg-zinc-900 p-6 shadow-sm transition hover:shadow-md ${
-              isFirst ? 'border-blue-200 dark:border-blue-900/50' : 'border-emerald-200 dark:border-emerald-900/50'
+            className={`relative rounded-3xl border bg-white dark:bg-zinc-900 p-6 sm:p-7 shadow-sm transition hover:shadow-md ${
+              isFirst ? 'border-red-200 dark:border-red-950/60' : 'border-emerald-200 dark:border-emerald-950/60'
             }`}
           >
-            {/* Topo: Número de Urna e Partido */}
-            <div className="flex items-start justify-between">
-              <div>
-                <span
-                  className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase ${
-                    isFirst
-                      ? 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300'
-                      : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
-                  }`}
-                >
-                  {candidato.partido.split(' - ')[0]}
-                </span>
-                <h3 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
-                  {candidato.nome_urna}
-                </h3>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                  {candidato.nome_completo}
-                </p>
+            {/* Topo: Foto, Nome de Urna e Número */}
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 shrink-0 shadow-xs">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={candidato.foto}
+                    alt={candidato.nome_urna}
+                    className="h-full w-full object-cover"
+                    onError={(e) => {
+                      // Fallback se imagem externa falhar
+                      (e.target as HTMLElement).style.display = 'none';
+                    }}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center font-bold text-lg text-zinc-400 -z-10">
+                    {candidato.numero}
+                  </div>
+                </div>
+
+                <div>
+                  <span
+                    className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase ${
+                      isFirst
+                        ? 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300'
+                        : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
+                    }`}
+                  >
+                    {candidato.partido.split(' - ')[0]}
+                  </span>
+                  <h3 className="mt-1 text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+                    {candidato.nome_urna}
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    {candidato.nome_completo}
+                  </p>
+                </div>
               </div>
 
               <div
-                className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl font-black text-white shadow-sm ${
-                  isFirst ? 'bg-blue-600' : 'bg-emerald-600'
+                className={`flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl text-2xl sm:text-3xl font-black text-white shadow-sm shrink-0 ${
+                  isFirst ? 'bg-red-600' : 'bg-emerald-600'
                 }`}
               >
                 {candidato.numero}
@@ -67,7 +86,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
             </div>
 
             {/* Informações Básicas da Chapa */}
-            <div className="mt-4 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800 pt-4 text-xs text-zinc-600 dark:text-zinc-300">
+            <div className="mt-5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800 pt-4 text-xs text-zinc-600 dark:text-zinc-300">
               <p>
                 <span className="font-semibold text-zinc-800 dark:text-zinc-200">Candidato a Vice:</span>{' '}
                 {candidato.vice}
@@ -101,7 +120,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                 <div className="rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3 border border-zinc-100 dark:border-zinc-800">
                   <div className="flex items-center gap-1.5 text-zinc-500 text-xs">
                     <FileText className="w-3.5 h-3.5" />
-                    <span>Projetos de Lei</span>
+                    <span>Matérias / Proposições</span>
                   </div>
                   <p className="mt-1 text-lg font-bold text-zinc-900 dark:text-white">
                     {candidato.kpis.projetos_apresentados}
@@ -121,9 +140,9 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                 <div className="rounded-xl bg-zinc-50 dark:bg-zinc-800/60 p-3 border border-zinc-100 dark:border-zinc-800">
                   <div className="flex items-center gap-1.5 text-zinc-500 text-xs">
                     <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Assiduidade</span>
+                    <span>Atuação</span>
                   </div>
-                  <p className="mt-1 text-lg font-bold text-zinc-900 dark:text-white">
+                  <p className="mt-1 text-sm font-bold text-zinc-900 dark:text-white truncate">
                     {candidato.kpis.frequencia_plenario}
                   </p>
                 </div>
