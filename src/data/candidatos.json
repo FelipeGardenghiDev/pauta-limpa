@@ -1,0 +1,366 @@
+{
+  "eleicao": {
+    "ano": 2026,
+    "cargo": "Presidente da República",
+    "turno": "2º Turno",
+    "data_atualizacao": "12 de outubro de 2026",
+    "fontes_oficiais": [
+      {
+        "nome": "TSE - DivulgaCandContas",
+        "url": "https://divulgacandcontas.tse.jus.br"
+      },
+      {
+        "nome": "Câmara dos Deputados (Dados Abertos)",
+        "url": "https://dadosabertos.camara.leg.br"
+      },
+      {
+        "nome": "Senado Federal",
+        "url": "https://legis.senado.leg.br/dadosabertos"
+      }
+    ]
+  },
+  "candidatos": [
+    {
+      "id": "candidato-1",
+      "nome_completo": "Candidato Alfa da Silva",
+      "nome_urna": "Candidato Alfa",
+      "numero": "00",
+      "partido": "PAR - Partido de Ação Republicana",
+      "coligacao": "União pelo Progresso",
+      "vice": "Dra. Helena Martins",
+      "foto": "/placeholder-a.png",
+      "cor_tema": "#2563eb",
+      "historico_resumo": "Deputado Federal por 3 mandatos e ex-Presidente da Comissão de Finanças e Tributação.",
+      "kpis": {
+        "anos_vida_publica": 12,
+        "projetos_apresentados": 142,
+        "leis_aprovadas_autor_relator": 18,
+        "frequencia_plenario": "94.2%"
+      },
+      "radar_foco": [
+        {
+          "eixo": "Economia",
+          "valor": 88
+        },
+        {
+          "eixo": "Saúde",
+          "valor": 65
+        },
+        {
+          "eixo": "Educação",
+          "valor": 70
+        },
+        {
+          "eixo": "Segurança",
+          "valor": 60
+        },
+        {
+          "eixo": "Meio Ambiente",
+          "valor": 55
+        },
+        {
+          "eixo": "Gestão Pública",
+          "valor": 80
+        }
+      ],
+      "propostas_por_tema": {
+        "economia": {
+          "titulo": "Modernização Tributária e Responsabilidade Fiscal",
+          "resumo_ia": [
+            "Proposta de isenção de IRPF para rendas de até 4 salários mínimos, compensada com tributação progressiva de lucros e dividendos.",
+            "Criação de fundo de estabilização fiscal para obras de infraestrutura logística e energia sustentável.",
+            "Simplificação regulatória para micro e pequenas empresas com redução de taxas no Simples Nacional."
+          ],
+          "texto_oficial": "O plano protocolado estabelece como prioridade a transição da matriz tributária sobre consumo para a renda e patrimônio, garantindo previsibilidade fiscal e incentivo à industrialização verde.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 14,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        },
+        "saude": {
+          "titulo": "Digitalização do SUS e Ampliação da Atenção Primária",
+          "resumo_ia": [
+            "Unificação do prontuário eletrônico em 100% dos municípios integrando clínicas da família e rede hospitalar.",
+            "Mutirão nacional de cirurgias eletivas com convênios público-privados para zerar filas de espera acumuladas.",
+            "Incentivo financeiro para fixação de médicos especialistas no interior e regiões periféricas."
+          ],
+          "texto_oficial": "Fortalecimento do complexo econômico-industrial da saúde com produção nacional de insumos estratégicos e ampliação dos centros de diagnóstico rápido no SUS.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 22,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        },
+        "educacao": {
+          "titulo": "Ensino Integral Técnico e Conectividade Escolar",
+          "resumo_ia": [
+            "Meta de 40% das escolas públicas de ensino médio integradas à formação técnica profissionalizante.",
+            "Bolsa-permanência para estudantes do 3º ano do ensino médio em situação de vulnerabilidade social.",
+            "Fibra ótica e laboratórios digitais em todas as escolas de educação básica até 2028."
+          ],
+          "texto_oficial": "Articulação de pacto nacional com estados para expansão das vagas em período integral, valorização da carreira docente e piso salarial com incentivo por desempenho pedagógico.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 30,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        },
+        "seguranca": {
+          "titulo": "Inteligência Policial Integrada e Controle de Fronteiras",
+          "resumo_ia": [
+            "Sistema Único de Segurança Pública (SUSP) operacionalizado com banco nacional integrado de biometria e balística.",
+            "Asfixia financeira do crime organizado via cooperação da Polícia Federal com COAF e Receita Federal.",
+            "Fundo nacional para reaparelhamento e valorização salarial de policiais civis e militares."
+          ],
+          "texto_oficial": "Priorização da investigação criminal qualificada, uso intensivo de drones e câmeras corporais, e foco na interceptação de armas de grosso calibre nas fronteiras nacionais.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 38,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        }
+      }
+    },
+    {
+      "id": "candidato-2",
+      "nome_completo": "Candidato Beta de Souza",
+      "nome_urna": "Candidato Beta",
+      "numero": "99",
+      "partido": "PLIB - Partido da Liberdade e Inovação",
+      "coligacao": "Aliança pelo Futuro do Brasil",
+      "vice": "General Carlos Eduardo",
+      "foto": "/placeholder-b.png",
+      "cor_tema": "#16a34a",
+      "historico_resumo": "Senador da República por 1 mandato, ex-Governador de Estado e ex-Secretário de Fazenda.",
+      "kpis": {
+        "anos_vida_publica": 16,
+        "projetos_apresentados": 118,
+        "leis_aprovadas_autor_relator": 22,
+        "frequencia_plenario": "91.8%"
+      },
+      "radar_foco": [
+        {
+          "eixo": "Economia",
+          "valor": 92
+        },
+        {
+          "eixo": "Saúde",
+          "valor": 60
+        },
+        {
+          "eixo": "Educação",
+          "valor": 62
+        },
+        {
+          "eixo": "Segurança",
+          "valor": 85
+        },
+        {
+          "eixo": "Meio Ambiente",
+          "valor": 50
+        },
+        {
+          "eixo": "Gestão Pública",
+          "valor": 84
+        }
+      ],
+      "propostas_por_tema": {
+        "economia": {
+          "titulo": "Desregulamentação, Privatizações e Teto de Gastos Rígido",
+          "resumo_ia": [
+            "Corte linear de 15% nas despesas administrativas da máquina federal com redução de ministérios.",
+            "Programa agressivo de concessões rodoviárias, portuárias e privatização de estatais deficitárias.",
+            "Alíquota única para tributação sobre o consumo com desoneração total da folha de pagamento."
+          ],
+          "texto_oficial": "O plano estabelece foco irrestrito na liberdade de empreender, atração de capital estrangeiro privado e desoneração da produção industrial para gerar emprego direto.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 12,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        },
+        "saude": {
+          "titulo": "Gestão por Organizações Sociais e Vouchers de Atendimento",
+          "resumo_ia": [
+            "Parcerias público-privadas (PPPs) para administração de hospitais gerais e unidades de pronto atendimento.",
+            "Vouchers de saúde para realização de exames complexos na rede privada quando o SUS demorar mais de 30 dias.",
+            "Descentralização dos repasses federais com auditoria em tempo real por inteligência artificial."
+          ],
+          "texto_oficial": "Modernização gerencial inspirada nas melhores práticas internacionais, com pagamento por performance e metas de resolutividade clínica em toda a rede assistencial.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 19,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        },
+        "educacao": {
+          "titulo": "Foco em Alfabetização Básica, STEM e Escolas Cívico-Militares",
+          "resumo_ia": [
+            "Adesão voluntária de estados ao modelo de escolas cívico-militares com foco em disciplina e rendimento.",
+            "Reformulação curricular com prioridade absoluta para Língua Portuguesa, Matemática e Ciências (STEM).",
+            "Cheque-educação (vouchers) para creches comunitárias conveniadas da primeira infância."
+          ],
+          "texto_oficial": "Prioridade de investimentos na educação básica e infantil, com bonificação para redes municipais que atingirem metas do Ideb e combate à evasão escolar no ensino fundamental.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 26,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        },
+        "seguranca": {
+          "titulo": "Endurecimento Penal, Modernização Bélica e Apoio Jurídico Policial",
+          "resumo_ia": [
+            "Proposta de emenda para extinção das saídas temporárias de presos e endurecimento da progressão de regime.",
+            "Ampliação do excludente de ilicitude para policiais em serviço no confronto armado.",
+            "Investimento maciço em armamento moderno, coletes de alta proteção e viaturas blindadas para tropas de choque."
+          ],
+          "texto_oficial": "Combate intransigente ao crime violento e às facções narcoterroristas com isolamento de lideranças em penitenciárias federais de segurança máxima e apoio integral às forças de segurança.",
+          "fonte_documento": "Plano de Governo Registrado no TSE",
+          "pagina_documento": 34,
+          "link_plano_tse": "https://divulgacandcontas.tse.jus.br"
+        }
+      }
+    }
+  ],
+  "votacoes_historicas": [
+    {
+      "materia": "Reforma Tributária (PEC 45/2019)",
+      "descricao": "Unificação de tributos federais e subnacionais sobre o consumo (CBS e IBS).",
+      "data": "2023-12-15",
+      "fonte_oficial_camara": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2196833",
+      "candidato_1": {
+        "voto": "SIM",
+        "detalhe": "Votou favorável à aprovação da emenda constitucional."
+      },
+      "candidato_2": {
+        "voto": "SIM",
+        "detalhe": "Votou a favor no Senado após inclusão de travas de alíquota máxima."
+      }
+    },
+    {
+      "materia": "Marco Legal do Saneamento Básico (PL 4162/2019)",
+      "descricao": "Abertura para concorrência privada nos serviços de água e esgoto nos municípios.",
+      "data": "2020-06-24",
+      "fonte_oficial_camara": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2232598",
+      "candidato_1": {
+        "voto": "NÃO",
+        "detalhe": "Votou contra, defendendo a exclusividade e fortalecimento das estatais de saneamento."
+      },
+      "candidato_2": {
+        "voto": "SIM",
+        "detalhe": "Votou a favor da atração de capital privado para universalização dos serviços."
+      }
+    },
+    {
+      "materia": "Autonomia do Banco Central (PLP 19/2019)",
+      "descricao": "Definição de mandatos fixos para o presidente e diretores do Banco Central.",
+      "data": "2021-02-10",
+      "fonte_oficial_camara": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2270921",
+      "candidato_1": {
+        "voto": "NÃO",
+        "detalhe": "Argumentou que a política monetária deve estar subordinada ao governo eleito."
+      },
+      "candidato_2": {
+        "voto": "SIM",
+        "detalhe": "Defendeu a blindagem técnica contra interferências políticas na inflação."
+      }
+    },
+    {
+      "materia": "Privatização da Eletrobras (MP 1031/2021)",
+      "descricao": "Desestatização da maior empresa de geração e transmissão de energia da América Latina.",
+      "data": "2021-06-21",
+      "fonte_oficial_camara": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2271891",
+      "candidato_1": {
+        "voto": "NÃO",
+        "detalhe": "Defendeu a segurança energética como ativo soberano estatal."
+      },
+      "candidato_2": {
+        "voto": "SIM",
+        "detalhe": "Defendeu eficiência de gestão e desoneração do Estado de investimentos bilionários."
+      }
+    },
+    {
+      "materia": "Fim das Saídas Temporárias de Presos (PL 2253/2022)",
+      "descricao": "Restrição às saídas temporárias de detentos em datas comemorativas.",
+      "data": "2024-03-20",
+      "fonte_oficial_camara": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2334812",
+      "candidato_1": {
+        "voto": "NÃO",
+        "detalhe": "Votou contra o fim total, defendendo manutenção para estudo e trabalho prisional."
+      },
+      "candidato_2": {
+        "voto": "SIM",
+        "detalhe": "Votou a favor do fim integral das 'saidinhas', priorizando a segurança pública."
+      }
+    }
+  ],
+  "quiz_afinidade": [
+    {
+      "id": 1,
+      "pergunta": "Qual modelo você prefere para serviços públicos como saneamento e energia?",
+      "opcoes": [
+        {
+          "texto": "Prioridade para estatais fortes com gestão pública direta",
+          "peso_candidato_1": 1,
+          "peso_candidato_2": 0
+        },
+        {
+          "texto": "Abertura para concessões e privatizações com investimentos privados",
+          "peso_candidato_1": 0,
+          "peso_candidato_2": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "pergunta": "Sobre o sistema tributário e impostos, qual deve ser a prioridade?",
+      "opcoes": [
+        {
+          "texto": "Tributar mais lucros e altas rendas para financiar serviços sociais e isentar os mais pobres",
+          "peso_candidato_1": 1,
+          "peso_candidato_2": 0
+        },
+        {
+          "texto": "Reduzir gastos do Estado, cortar ministérios e simplificar alíquotas para estimular negócios",
+          "peso_candidato_1": 0,
+          "peso_candidato_2": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pergunta": "Na segurança pública, qual foco deve receber mais recursos imediatos?",
+      "opcoes": [
+        {
+          "texto": "Inteligência policial, combate à lavagem de dinheiro e prevenção integrada",
+          "peso_candidato_1": 1,
+          "peso_candidato_2": 0
+        },
+        {
+          "texto": "Endurecimento de penas, fim de benefícios prisionais e apoio bélico às tropas",
+          "peso_candidato_1": 0,
+          "peso_candidato_2": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pergunta": "Na saúde pública, qual caminho você considera mais eficiente?",
+      "opcoes": [
+        {
+          "texto": "Fortalecer 100% o SUS com produção nacional de remédios e concurso para médicos",
+          "peso_candidato_1": 1,
+          "peso_candidato_2": 0
+        },
+        {
+          "texto": "Parcerias com hospitais privados e vouchers para desafogar filas rapidamente",
+          "peso_candidato_1": 0,
+          "peso_candidato_2": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pergunta": "Na educação básica e média, qual deve ser o modelo predominante?",
+      "opcoes": [
+        {
+          "texto": "Escola pública integral com foco em bolsa-permanência e formação técnica social",
+          "peso_candidato_1": 1,
+          "peso_candidato_2": 0
+        },
+        {
+          "texto": "Expansão de escolas cívico-militares, cheques-educação e reforço em disciplinas exatas",
+          "peso_candidato_1": 0,
+          "peso_candidato_2": 1
+        }
+      ]
+    }
+  ]
+}

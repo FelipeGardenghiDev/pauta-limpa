@@ -1,0 +1,34 @@
+name: Atualizar Dados Civicos das Eleições
+
+on:
+  # Roda automaticamente todos os dias às 06:00 UTC (03:00 de Brasília)
+  schedule:
+    - cron: '0 6 * * *'
+  # Permite disparar manualmente pelo botão "Run workflow" no GitHub
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Executar Robô de Coleta (Câmara dos Deputados e TSE)
+        run: |
+          npm run coletar
+
+      - name: Fazer commit e push das atualizações (se houver mudanças)
+        run: |
+          git config --global user.name "Robô Cívico Eleições 2026"
+          git config --global user.email "bot-eleicoes@users.noreply.github.com"
+          git add src/data/candidatos.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(dados): auditoria e atualização automática das fontes públicas [skip ci]" && git push)
