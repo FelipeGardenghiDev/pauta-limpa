@@ -94,13 +94,13 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
         </div>
       </div>
 
-      {/* Grid Lado a Lado (Azul vs Âmbar) */}
+      {/* Grid Lado a Lado (Bordas e Marcadores 100% Neutros) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
-        {/* Candidato A (Lula - Azul) */}
-        <div className="rounded-2xl border border-blue-200 dark:border-blue-900/50 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs flex flex-col justify-between">
+        {/* Candidato A (Lula) */}
+        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
-              <span className="text-sm font-bold text-blue-700 dark:text-blue-400">
+              <span className="text-sm font-bold text-red-600 dark:text-red-400">
                 {candA.nome_urna} ({candA.numero})
               </span>
               <span className="text-xs text-zinc-400">Pág. {propA?.pagina_documento} do plano oficial</span>
@@ -110,11 +110,11 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
               {propA?.titulo}
             </h4>
 
-            {/* Bullets fáceis */}
+            {/* Bullets com marcadores neutros */}
             <ul className="mt-3.5 space-y-2.5 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
               {propA?.resumo_ia.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-blue-600 shrink-0" aria-hidden="true" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-zinc-400 dark:bg-zinc-500 shrink-0" aria-hidden="true" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -148,7 +148,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 href={propA?.link_plano_tse}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-blue-700 dark:text-blue-400 font-medium hover:underline"
+                className="flex items-center gap-1 text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:underline"
               >
                 Abrir no TSE <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
@@ -156,8 +156,8 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
           </div>
         </div>
 
-        {/* Candidato B (Flávio Bolsonaro - Âmbar) */}
-        <div className="rounded-2xl border border-amber-200 dark:border-amber-900/50 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs flex flex-col justify-between">
+        {/* Candidato B (Flávio Bolsonaro) */}
+        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-6 shadow-xs flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
               <span className="text-sm font-bold text-amber-700 dark:text-amber-400">
@@ -170,11 +170,11 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
               {propB?.titulo}
             </h4>
 
-            {/* Bullets fáceis */}
+            {/* Bullets com marcadores neutros */}
             <ul className="mt-3.5 space-y-2.5 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
               {propB?.resumo_ia.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
-                  <span className="mt-1.5 h-2 w-2 rounded-full bg-amber-600 shrink-0" aria-hidden="true" />
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-zinc-400 dark:bg-zinc-500 shrink-0" aria-hidden="true" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -208,7 +208,7 @@ export default function ProposalComparator({ candidatos }: ProposalComparatorPro
                 href={propB?.link_plano_tse}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-amber-700 dark:text-amber-400 font-medium hover:underline"
+                className="flex items-center gap-1 text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:underline"
               >
                 Abrir no Senado <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>

@@ -30,13 +30,11 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 my-8">
       {candidatos.map((candidato, index) => {
-        const isFirst = index === 0; // Lula (Azul Índigo) vs Flávio Bolsonaro (Âmbar)
+        const isLula = index === 0;
         return (
           <div
             key={candidato.id}
-            className={`relative rounded-3xl border bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs transition hover:shadow-md flex flex-col justify-between ${
-              isFirst ? 'border-blue-200 dark:border-blue-900/50' : 'border-amber-200 dark:border-amber-900/50'
-            }`}
+            className="relative rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 sm:p-7 shadow-xs transition hover:shadow-md flex flex-col justify-between"
           >
             <div>
               {/* Topo: Foto, Nome de Urna e Número */}
@@ -53,16 +51,16 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                   </div>
 
                   <div>
-                    <span
-                      className={`inline-block px-3 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase ${
-                        isFirst
-                          ? 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300'
-                          : 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
-                      }`}
-                    >
+                    <span className="inline-block px-3 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
                       {candidato.partido.split(' - ')[0]}
                     </span>
-                    <h3 className="mt-1 text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+                    <h3
+                      className={`mt-1 text-2xl sm:text-3xl font-extrabold tracking-tight ${
+                        isLula
+                          ? 'text-red-600 dark:text-red-400'
+                          : 'text-amber-700 dark:text-amber-400'
+                      }`}
+                    >
                       {candidato.nome_urna}
                     </h3>
                     <p className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -72,20 +70,18 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
                 </div>
 
                 <div
-                  className={`flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl text-2xl sm:text-3xl font-black text-white shadow-xs shrink-0 ${
-                    isFirst ? 'bg-blue-600' : 'bg-amber-600'
-                  }`}
+                  className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl text-2xl sm:text-3xl font-black bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-xs shrink-0"
                   aria-label={`Número na urna: ${candidato.numero}`}
                 >
                   {candidato.numero}
                 </div>
               </div>
 
-              {/* Informações Básicas da Chapa */}
+              {/* Informações Básicas da Chapa (Neutras e Iguais) */}
               <div className="mt-5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800 pt-4 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
                 <p>
                   <span className="font-semibold text-zinc-900 dark:text-zinc-100">Vice na chapa:</span>{' '}
-                  <strong className={isFirst ? 'text-blue-700 dark:text-blue-400 font-semibold' : 'text-amber-700 dark:text-amber-400 font-semibold'}>
+                  <strong className="text-zinc-900 dark:text-white font-semibold">
                     {candidato.vice}
                   </strong>
                 </p>
@@ -99,7 +95,7 @@ export default function CandidateCards({ candidatos }: CandidateCardsProps) {
               </div>
             </div>
 
-            {/* Indicadores de BI em Linguagem Simples */}
+            {/* Indicadores de BI (Neutros e Simétricos) */}
             <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800">
               <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-3">
                 Histórico na Política (Fontes Oficiais)
