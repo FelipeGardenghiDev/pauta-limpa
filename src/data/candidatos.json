@@ -329,25 +329,25 @@
         ]
       },
       "flavio": {
-        "pergunta_mito": "A direita de Flávio quer acabar com os programas sociais e os direitos?",
+        "pergunta_mito": "A direita de Flávio quer acabar com o Bolsa Família e programas sociais?",
         "fatos": [
           {
-            "titulo": "Apoiou o Auxílio permanente de R$ 600",
-            "detalhe": "Flávio votou no Senado a favor da PEC dos Benefícios que aumentou e tornou permanente o valor de R$ 600 do Bolsa Família/Auxílio Brasil, garantindo a continuidade do maior programa social para famílias de baixa renda."
+            "titulo": "O recuo dos R$ 200 e o apoio ao benefício de R$ 600",
+            "detalhe": "Na pandemia (2020), o governo propôs inicialmente pagar apenas R$ 200 de auxílio; após forte pressão da oposição e do Congresso, o valor subiu para R$ 600. Em 2022, no Senado, Flávio apoiou a PEC dos Benefícios que elevou o Auxílio Brasil para R$ 600 (embora com validade temporária até o fim daquele ano eleitoral)."
           },
           {
             "titulo": "Aprovou a Lei da Liberdade Econômica",
-            "detalhe": "Apoiou a Lei 13.874/2019, que acabou com a exigência de alvarás caros e licenças demoradas da prefeitura para quem quer abrir pequenos negócios de baixo risco, facilitando a vida de milhares de novos comerciantes."
+            "detalhe": "Apoiou a Lei 13.874/2019, que acabou com a exigência de alvarás caros e licenças demoradas da prefeitura para quem quer abrir pequenos negócios de baixo risco, facilitando a vida de novos comerciantes."
           }
         ],
         "alertas": [
           {
-            "titulo": "Questionamento do sistema eleitoral e urnas",
-            "detalhe": "O grupo político e familiar de Flávio tem um histórico contínuo de levantar suspeitas públicas sem provas sobre a segurança das urnas eletrônicas e atacar decisões do Tribunal Superior Eleitoral (TSE)."
+            "titulo": "A contradição do discurso 'anti-assistencialismo'",
+            "detalhe": "Muitos eleitores conservadores votam na direita esperando o fim do Bolsa Família ('ensinar a pescar e não dar o peixe'). No entanto, no governo, o grupo rebatizou o programa, triplicou o valor médio para R$ 600 às vésperas da eleição e furou o teto de gastos, gerando acusações de incoerência ideológica e uso eleitoreiro."
           },
           {
-            "titulo": "Conflito com o STF e atos do 8 de Janeiro",
-            "detalhe": "Apoiou a abertura de CPIs e pedidos de impeachment contra ministros do Supremo Tribunal Federal (STF), além da participação política no clima de tensão institucional que culminou na invasão dos Três Poderes em 8 de janeiro de 2023."
+            "titulo": "Questionamento do sistema eleitoral e urnas",
+            "detalhe": "O grupo político e familiar de Flávio tem um histórico contínuo de levantar suspeitas públicas sem provas sobre a segurança das urnas eletrônicas e atacar decisões do Tribunal Superior Eleitoral (TSE), além das tensões institucionais do 8 de Janeiro de 2023."
           }
         ]
       }
