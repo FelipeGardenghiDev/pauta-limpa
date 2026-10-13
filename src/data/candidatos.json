@@ -302,54 +302,141 @@
   ],
   "fatos_contra_rotulos": [
     {
-      "candidato_id": "lula",
-      "nome_urna": "Lula",
-      "pergunta_mito": "Lula é contra quem empreende e quer implantar o comunismo?",
-      "o_que_os_fatos_mostram": [
-        {
-          "titulo": "Criou o MEI para os pequenos empreendedores",
-          "detalhe": "Foi no governo Lula que nasceu o MEI (Lei Complementar 128/2008). Essa lei tirou mais de 15 milhões de brasileiros da informalidade (como manicures, pedreiros e comerciantes), permitindo emitir nota fiscal e ter aposentadoria com um imposto único e muito barato."
-        },
-        {
-          "titulo": "Apoio recorde ao Agronegócio e bancos",
-          "detalhe": "Longe de ser um governo comunista, seus mandatos liberaram os maiores valores da história para os grandes produtores rurais através do Plano Safra (mais de R$ 400 bilhões por ano) e os grandes bancos privados registraram lucros recordes históricos."
-        }
-      ],
-      "alertas_e_riscos_democraticos": [
-        {
-          "titulo": "Falas sobre regimes autoritários",
-          "detalhe": "Críticos apontam declarações públicas em que Lula minimizou problemas democráticos em ditaduras e regimes autoritários na América Latina, como na Venezuela e Nicarágua, dizendo que democracia é um 'conceito relativo'."
-        },
-        {
-          "titulo": "Pressão sobre a autonomia de órgãos",
-          "detalhe": "O partido defende com frequência a 'regulamentação da imprensa' e Lula fez duras críticas públicas à independência formal do Banco Central e às agências reguladoras, gerando receio de intervenção política excessiva."
-        }
-      ]
+      "id": "negocios-social",
+      "categoria_label": "💼 Empresas, Agro e Ajuda Social",
+      "descricao_curta": "Mitos sobre perseguição a empresários, comunismo e fim de benefícios sociais.",
+      "lula": {
+        "pergunta_mito": "Lula é contra quem empreende e quer implantar o comunismo?",
+        "fatos": [
+          {
+            "titulo": "Criou o MEI para os microempreendedores",
+            "detalhe": "Foi no governo Lula que nasceu o MEI (Lei Complementar 128/2008). Essa lei tirou mais de 15 milhões de brasileiros da informalidade (manicures, pedreiros, pequenos comerciantes), permitindo abrir CNPJ, emitir nota fiscal e ter aposentadoria com um imposto único e reduzido."
+          },
+          {
+            "titulo": "Apoio recorde ao Agronegócio e bancos",
+            "detalhe": "Longe de ser um governo comunista, seus mandatos liberaram os maiores valores da história para os grandes produtores rurais através do Plano Safra (mais de R$ 400 bilhões por ano) e os grandes bancos privados registraram lucros recordes históricos durante seus governos."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Falas sobre regimes autoritários",
+            "detalhe": "Críticos apontam declarações públicas em que Lula minimizou problemas democráticos em ditaduras da América Latina, como na Venezuela e Nicarágua, dizendo que democracia é um 'conceito relativo'."
+          },
+          {
+            "titulo": "Pressão sobre a autonomia de órgãos",
+            "detalhe": "O partido defende com frequência a 'regulamentação da mídia' e Lula fez duras críticas públicas à independência formal do Banco Central e às agências reguladoras, gerando receio de interferência política."
+          }
+        ]
+      },
+      "flavio": {
+        "pergunta_mito": "A direita de Flávio quer acabar com os programas sociais e os direitos?",
+        "fatos": [
+          {
+            "titulo": "Apoiou o Auxílio permanente de R$ 600",
+            "detalhe": "Flávio votou no Senado a favor da PEC dos Benefícios que aumentou e tornou permanente o valor de R$ 600 do Bolsa Família/Auxílio Brasil, garantindo a continuidade do maior programa social para famílias de baixa renda."
+          },
+          {
+            "titulo": "Aprovou a Lei da Liberdade Econômica",
+            "detalhe": "Apoiou a Lei 13.874/2019, que acabou com a exigência de alvarás caros e licenças demoradas da prefeitura para quem quer abrir pequenos negócios de baixo risco, facilitando a vida de milhares de novos comerciantes."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Questionamento do sistema eleitoral e urnas",
+            "detalhe": "O grupo político e familiar de Flávio tem um histórico contínuo de levantar suspeitas públicas sem provas sobre a segurança das urnas eletrônicas e atacar decisões do Tribunal Superior Eleitoral (TSE)."
+          },
+          {
+            "titulo": "Conflito com o STF e atos do 8 de Janeiro",
+            "detalhe": "Apoiou a abertura de CPIs e pedidos de impeachment contra ministros do Supremo Tribunal Federal (STF), além da participação política no clima de tensão institucional que culminou na invasão dos Três Poderes em 8 de janeiro de 2023."
+          }
+        ]
+      }
     },
     {
-      "candidato_id": "flavio-bolsonaro",
-      "nome_urna": "Flávio Bolsonaro",
-      "pergunta_mito": "A direita de Flávio quer acabar com os programas sociais e os direitos?",
-      "o_que_os_fatos_mostram": [
-        {
-          "titulo": "Apoiou o Auxílio permanente de R$ 600",
-          "detalhe": "Flávio votou no Senado a favor da PEC que aumentou e tornou permanente o valor de R$ 600 do Auxílio Brasil/Bolsa Família, garantindo a continuidade do maior programa de transferência de renda para famílias de baixa renda."
-        },
-        {
-          "titulo": "Aprovou a Lei da Liberdade Econômica",
-          "detalhe": "Apoiou a Lei 13.874/2019, que acabou com a exigência de alvarás caros e licenças demoradas da prefeitura para quem quer abrir pequenos negócios de baixo risco, desburocratizando a vida de milhares de comerciantes."
-        }
-      ],
-      "alertas_e_riscos_democraticos": [
-        {
-          "titulo": "Questionamento do sistema eleitoral e urnas",
-          "detalhe": "O grupo político e familiar de Flávio tem um histórico contínuo de levantar suspeitas sem provas sobre a segurança das urnas eletrônicas e atacar decisões do Tribunal Superior Eleitoral (TSE), abalando a confiança no resultado das eleições."
-        },
-        {
-          "titulo": "Conflito com o STF e atos do 8 de Janeiro",
-          "detalhe": "Apoiou a abertura de CPIs e pedidos de impeachment contra ministros do Supremo Tribunal Federal (STF), além da participação política no clima de tensão institucional que culminou na invasão dos Três Poderes em 8 de janeiro de 2023."
-        }
-      ]
+      "id": "religiao-costumes",
+      "categoria_label": "⛪ Igrejas, Liberdade Religiosa e Proteção",
+      "descricao_curta": "Boatos sobre fechamento de templos religiosos e revogação de leis de proteção.",
+      "lula": {
+        "pergunta_mito": "Lula vai fechar igrejas ou perseguir cristãos e evangélicos?",
+        "fatos": [
+          {
+            "titulo": "Sancionou a Lei da Liberdade Religiosa",
+            "detalhe": "Foi no primeiro governo Lula que foi sancionada a Lei 10.825/2003, que garantiu que igrejas e entidades religiosas tivessem personalidade jurídica própria, funcionando livremente sem qualquer intervenção ou fechamento por parte do Estado."
+          },
+          {
+            "titulo": "Criou o Dia Nacional da Marcha para Jesus",
+            "detalhe": "Lula sancionou em 2009 a Lei 12.025, oficializando a Marcha para Jesus no calendário nacional. Ao longo de todos os seus mandatos, nenhuma igreja foi fechada no Brasil e a liberdade de culto é garantia intocável na Constituição."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Divergências com lideranças sobre costumes",
+            "detalhe": "Setores conservadores e evangélicos apontam atritos com pautas históricas da esquerda, como debates sobre legalização do aborto e políticas de gênero defendidas por alas do partido."
+          }
+        ]
+      },
+      "flavio": {
+        "pergunta_mito": "A oposição quer acabar com leis de proteção às mulheres?",
+        "fatos": [
+          {
+            "titulo": "Votou pelo aumento de penas para violência doméstica",
+            "detalhe": "No Senado, Flávio Bolsonaro votou favorável ao endurecimento de penas para agressões contra a mulher e feminicídio (como o Pacote Antifeminicídio e o reforço às medidas protetivas da Lei Maria da Penha), votando a favor da punição severa a agressores."
+          },
+          {
+            "titulo": "Apoio a penas mais duras para estupradores",
+            "detalhe": "Defende o cumprimento integral de pena em regime fechado para crimes sexuais e violentos contra mulheres e crianças, sem direito a benefícios como saidinhas ou progressão rápida de regime."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Oposição a cotas femininas e pautas reprodutivas",
+            "detalhe": "Críticos apontam que o grupo rejeita cotas obrigatórias de mulheres na política, opõe-se firmemente a qualquer avanço em direitos reprodutivos e defende o porte de armas, o que especialistas apontam como risco de aumento da violência doméstica com armas de fogo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "poupanca-trabalho-saude",
+      "categoria_label": "💰 Poupança, 13º Salário e Saúde",
+      "descricao_curta": "Boatos sobre confisco de bens, corte de direitos trabalhistas e cobrança pelo SUS.",
+      "lula": {
+        "pergunta_mito": "O governo Lula vai confiscar a poupança ou tomar heranças e casas?",
+        "fatos": [
+          {
+            "titulo": "Confisco de poupança é proibido pela Constituição",
+            "detalhe": "A Emenda Constitucional 32/2001 proíbe expressamente qualquer presidente de confiscar a poupança ou investimentos bancários dos cidadãos por medida provisória ou decreto. O dinheiro no banco é protegido por cláusula pétrea."
+          },
+          {
+            "titulo": "Nenhum patrimônio pessoal é confiscado",
+            "detalhe": "A Reforma Tributária e leis recentes não tomam casas ou heranças de famílias; apenas simplificaram impostos estaduais já existentes (ITCMD). Ninguém perde imóveis ou bens particulares para o Estado."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Impostos em compras internacionais",
+            "detalhe": "O governo enfrentou fortes críticas populares ao aprovar a cobrança de imposto de importação sobre compras internacionais abaixo de 50 dólares (a chamada 'taxa das blusinhas'), encarecendo produtos de consumo popular."
+          }
+        ]
+      },
+      "flavio": {
+        "pergunta_mito": "Flávio quer acabar com o 13º salário, férias e cobrar pelo SUS?",
+        "fatos": [
+          {
+            "titulo": "13º salário e férias são cláusulas intocáveis",
+            "detalhe": "O 13º salário, as férias remuneradas e o FGTS são direitos protegidos pelo Artigo 7º da Constituição Federal. São 'cláusulas pétreas', o que significa que nem o presidente nem deputados têm poder legal para extingui-los."
+          },
+          {
+            "titulo": "O SUS continuará 100% gratuito por lei",
+            "detalhe": "A Constituição (Artigo 196) define que a saúde é dever do Estado e direito gratuito de todos. Nenhuma proposta do grupo propõe cobrar consultas ou exames no SUS; a proposta é de parcerias com hospitais particulares para agilizar filas, mantendo a gratuidade."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Flexibilização e terceirização de mão de obra",
+            "detalhe": "Centrais sindicais e movimentos trabalhistas criticam o apoio do grupo à terceirização ampla de postos de trabalho e à privatização de serviços essenciais como água, saneamento básico e presídios."
+          }
+        ]
+      }
     }
   ]
 }
