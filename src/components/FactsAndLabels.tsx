@@ -136,9 +136,9 @@ export default function FactsAndLabels({ itens }: FactsAndLabelsProps) {
               {/* Alertas Institucionais */}
               <div className="mt-6 pt-5 border-t border-zinc-100 dark:border-zinc-800">
                 <div className="flex items-center gap-2 mb-3">
-                  <ShieldAlert className="w-4 h-4 text-zinc-600 dark:text-zinc-400 shrink-0" aria-hidden="true" />
+                  <ShieldAlert className="w-4 h-4 text-zinc-700 dark:text-zinc-300 shrink-0" aria-hidden="true" />
                   <h5 className="text-xs font-bold uppercase tracking-wider text-zinc-800 dark:text-zinc-200">
-                    Alertas e tensões democráticas apontados por críticos:
+                    Alertas institucionais e pontos de atenção (críticos e especialistas):
                   </h5>
                 </div>
 
@@ -146,10 +146,10 @@ export default function FactsAndLabels({ itens }: FactsAndLabelsProps) {
                   {temaAtual.lula.alertas.map((alerta, aIdx) => (
                     <div
                       key={aIdx}
-                      className="rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 p-4 border border-zinc-100 dark:border-zinc-800/80"
+                      className="rounded-2xl bg-zinc-50 dark:bg-zinc-800/60 p-4 border border-zinc-200 dark:border-zinc-700/80"
                     >
                       <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-zinc-900 dark:text-white">
-                        <AlertTriangle className="w-3.5 h-3.5 text-zinc-500 shrink-0" aria-hidden="true" />
+                        <AlertTriangle className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 shrink-0" aria-hidden="true" />
                         <span>{alerta.titulo}</span>
                       </div>
                       <p className="mt-1.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
@@ -209,9 +209,9 @@ export default function FactsAndLabels({ itens }: FactsAndLabelsProps) {
               {/* Alertas Institucionais */}
               <div className="mt-6 pt-5 border-t border-zinc-100 dark:border-zinc-800">
                 <div className="flex items-center gap-2 mb-3">
-                  <ShieldAlert className="w-4 h-4 text-zinc-600 dark:text-zinc-400 shrink-0" aria-hidden="true" />
+                  <ShieldAlert className="w-4 h-4 text-zinc-700 dark:text-zinc-300 shrink-0" aria-hidden="true" />
                   <h5 className="text-xs font-bold uppercase tracking-wider text-zinc-800 dark:text-zinc-200">
-                    Alertas e tensões democráticas apontados por críticos:
+                    Alertas institucionais e pontos de atenção (críticos e especialistas):
                   </h5>
                 </div>
 
@@ -219,10 +219,10 @@ export default function FactsAndLabels({ itens }: FactsAndLabelsProps) {
                   {temaAtual.flavio.alertas.map((alerta, aIdx) => (
                     <div
                       key={aIdx}
-                      className="rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 p-4 border border-zinc-100 dark:border-zinc-800/80"
+                      className="rounded-2xl bg-zinc-50 dark:bg-zinc-800/60 p-4 border border-zinc-200 dark:border-zinc-700/80"
                     >
                       <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-zinc-900 dark:text-white">
-                        <AlertTriangle className="w-3.5 h-3.5 text-zinc-500 shrink-0" aria-hidden="true" />
+                        <AlertTriangle className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 shrink-0" aria-hidden="true" />
                         <span>{alerta.titulo}</span>
                       </div>
                       <p className="mt-1.5 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">

@@ -415,6 +415,10 @@
           {
             "titulo": "Impostos em compras internacionais",
             "detalhe": "O governo enfrentou fortes críticas populares ao aprovar a cobrança de imposto de importação sobre compras internacionais abaixo de 50 dólares (a chamada 'taxa das blusinhas'), encarecendo produtos de consumo popular."
+          },
+          {
+            "titulo": "Pressão fiscal e sustentabilidade das contas",
+            "detalhe": "Economistas e críticos apontam que o aumento acelerado de gastos do governo e a resistência em cortar despesas obrigatórias pressionam a dívida pública, criando risco de inflação e juros altos que corroem o poder de compra dos salários."
           }
         ]
       },
@@ -422,8 +426,8 @@
         "pergunta_mito": "Flávio quer acabar com o 13º salário, férias e cobrar pelo SUS?",
         "fatos": [
           {
-            "titulo": "13º salário e férias são cláusulas intocáveis",
-            "detalhe": "O 13º salário, as férias remuneradas e o FGTS são direitos protegidos pelo Artigo 7º da Constituição Federal. São 'cláusulas pétreas', o que significa que nem o presidente nem deputados têm poder legal para extingui-los."
+            "titulo": "13º salário e férias são cláusulas intocáveis na Constituição atual",
+            "detalhe": "O 13º salário, as férias remuneradas e o FGTS são direitos protegidos pelo Artigo 7º da Constituição Federal de 1988. São 'cláusulas pétreas', o que significa que nem o presidente nem deputados têm poder legal para extingui-los sob a ordem constitucional em vigor. Porém, juristas lembram que essa trava legal só tem validade enquanto a Constituição de 1988 for respeitada."
           },
           {
             "titulo": "O SUS continuará 100% gratuito por lei",
@@ -432,8 +436,16 @@
         ],
         "alertas": [
           {
-            "titulo": "Flexibilização e terceirização de mão de obra",
-            "detalhe": "Centrais sindicais e movimentos trabalhistas criticam o apoio do grupo à terceirização ampla de postos de trabalho e à privatização de serviços essenciais como água, saneamento básico e presídios."
+            "titulo": "Risco institucional: falas sobre 'Nova Constituinte' e mudar a Carta Magna",
+            "detalhe": "Embora a Constituição de 1988 proteja 13º e saúde gratuita, lideranças e aliados do grupo de Flávio já defenderam publicamente convocar uma 'Nova Assembleia Constituinte' para reescrever as leis do país. Juristas e entidades democráticas alertam para o perigo: uma nova Constituição 'zera o jogo' e anula as cláusulas pétreas atuais, abrindo brecha jurídica real para revogar direitos trabalhistas e proteções sociais históricas."
+          },
+          {
+            "titulo": "Tensão com o Judiciário e projetos para limitar o STF",
+            "detalhe": "Flávio e sua bancada apoiam PECs para limitar decisões individuais de juízes do STF e criar mandatos para ministros da Corte. Juristas alertam que tentar enfraquecer o Supremo ameaça a separação de Poderes e os freios e contrapesos da República, enquanto a oposição argumenta que o objetivo é frear o 'ativismo judicial'."
+          },
+          {
+            "titulo": "Flexibilização da CLT e terceirização ampla",
+            "detalhe": "Centrais sindicais e movimentos trabalhistas criticam o apoio do grupo a projetos que flexibilizam regras da CLT, ampliam a terceirização irrestrita de serviços e reduzem exigências para patrões, apontando risco de precarização das condições de trabalho."
           }
         ]
       }
