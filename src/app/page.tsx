@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import CandidateCards from '@/components/CandidateCards';
 import ProposalComparator from '@/components/ProposalComparator';
+import FactsAndLabels from '@/components/FactsAndLabels';
 import VotingMatrix from '@/components/VotingMatrix';
 import RadarPriorityChart from '@/components/RadarPriorityChart';
 import Footer from '@/components/Footer';
@@ -9,7 +10,7 @@ import Footer from '@/components/Footer';
 import eleicoesData from '@/data/candidatos.json';
 
 export default function HomePage() {
-  const { eleicao, candidatos, votacoes_historicas } = eleicoesData;
+  const { eleicao, candidatos, votacoes_historicas, fatos_contra_rotulos } = eleicoesData;
   const candA = candidatos[0];
   const candB = candidatos[1];
 
@@ -51,6 +52,12 @@ export default function HomePage() {
               📋 Diretrizes e Propostas
             </a>
             <a
+              href="#fatos-mitos"
+              className="px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 font-medium shadow-2xs transition"
+            >
+              💡 Fatos vs Mitos
+            </a>
+            <a
               href="#votacoes"
               className="px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 font-medium shadow-2xs transition"
             >
@@ -58,9 +65,9 @@ export default function HomePage() {
             </a>
             <a
               href="#radar"
-              className="px-3.5 py-2 rounded-xl bg-emerald-700 dark:bg-emerald-600 text-white hover:bg-emerald-800 font-medium shadow-2xs transition"
+              className="px-3.5 py-2 rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 hover:bg-zinc-800 font-medium shadow-2xs transition"
             >
-              📊 Radar de Prioridades
+              📊 Radar de Foco
             </a>
           </nav>
         </section>
@@ -75,7 +82,12 @@ export default function HomePage() {
           <ProposalComparator candidatos={candidatos} />
         </section>
 
-        {/* 3. Matriz de Votações Históricas */}
+        {/* 3. Fatos contra Mitos: Economia e Democracia */}
+        <section id="fatos-mitos" aria-label="Fatos contra Mitos e Alertas Democráticos">
+          <FactsAndLabels itens={fatos_contra_rotulos} />
+        </section>
+
+        {/* 4. Matriz de Votações Históricas */}
         <section id="votacoes" aria-label="Votações e Reformas Estruturais">
           <VotingMatrix
             votacoes={votacoes_historicas}
@@ -84,7 +96,7 @@ export default function HomePage() {
           />
         </section>
 
-        {/* 4. Gráfico Radar de BI */}
+        {/* 5. Gráfico Radar de BI */}
         <section id="radar" aria-label="Radar de Prioridades de Governo">
           <RadarPriorityChart candidatos={candidatos} />
         </section>

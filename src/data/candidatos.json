@@ -299,5 +299,57 @@
         "argumentacao": "Defendeu que os governos não têm dinheiro para levar esgoto a quase metade da população e que a chegada de empresas privadas acelera as obras com dinheiro novo."
       }
     }
+  ],
+  "fatos_contra_rotulos": [
+    {
+      "candidato_id": "lula",
+      "nome_urna": "Lula",
+      "pergunta_mito": "Lula é contra quem empreende e quer implantar o comunismo?",
+      "o_que_os_fatos_mostram": [
+        {
+          "titulo": "Criou o MEI para os pequenos empreendedores",
+          "detalhe": "Foi no governo Lula que nasceu o MEI (Lei Complementar 128/2008). Essa lei tirou mais de 15 milhões de brasileiros da informalidade (como manicures, pedreiros e comerciantes), permitindo emitir nota fiscal e ter aposentadoria com um imposto único e muito barato."
+        },
+        {
+          "titulo": "Apoio recorde ao Agronegócio e bancos",
+          "detalhe": "Longe de ser um governo comunista, seus mandatos liberaram os maiores valores da história para os grandes produtores rurais através do Plano Safra (mais de R$ 400 bilhões por ano) e os grandes bancos privados registraram lucros recordes históricos."
+        }
+      ],
+      "alertas_e_riscos_democraticos": [
+        {
+          "titulo": "Falas sobre regimes autoritários",
+          "detalhe": "Críticos apontam declarações públicas em que Lula minimizou problemas democráticos em ditaduras e regimes autoritários na América Latina, como na Venezuela e Nicarágua, dizendo que democracia é um 'conceito relativo'."
+        },
+        {
+          "titulo": "Pressão sobre a autonomia de órgãos",
+          "detalhe": "O partido defende com frequência a 'regulamentação da imprensa' e Lula fez duras críticas públicas à independência formal do Banco Central e às agências reguladoras, gerando receio de intervenção política excessiva."
+        }
+      ]
+    },
+    {
+      "candidato_id": "flavio-bolsonaro",
+      "nome_urna": "Flávio Bolsonaro",
+      "pergunta_mito": "A direita de Flávio quer acabar com os programas sociais e os direitos?",
+      "o_que_os_fatos_mostram": [
+        {
+          "titulo": "Apoiou o Auxílio permanente de R$ 600",
+          "detalhe": "Flávio votou no Senado a favor da PEC que aumentou e tornou permanente o valor de R$ 600 do Auxílio Brasil/Bolsa Família, garantindo a continuidade do maior programa de transferência de renda para famílias de baixa renda."
+        },
+        {
+          "titulo": "Aprovou a Lei da Liberdade Econômica",
+          "detalhe": "Apoiou a Lei 13.874/2019, que acabou com a exigência de alvarás caros e licenças demoradas da prefeitura para quem quer abrir pequenos negócios de baixo risco, desburocratizando a vida de milhares de comerciantes."
+        }
+      ],
+      "alertas_e_riscos_democraticos": [
+        {
+          "titulo": "Questionamento do sistema eleitoral e urnas",
+          "detalhe": "O grupo político e familiar de Flávio tem um histórico contínuo de levantar suspeitas sem provas sobre a segurança das urnas eletrônicas e atacar decisões do Tribunal Superior Eleitoral (TSE), abalando a confiança no resultado das eleições."
+        },
+        {
+          "titulo": "Conflito com o STF e atos do 8 de Janeiro",
+          "detalhe": "Apoiou a abertura de CPIs e pedidos de impeachment contra ministros do Supremo Tribunal Federal (STF), além da participação política no clima de tensão institucional que culminou na invasão dos Três Poderes em 8 de janeiro de 2023."
+        }
+      ]
+    }
   ]
 }
