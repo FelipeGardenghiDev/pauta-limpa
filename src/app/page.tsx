@@ -52,10 +52,10 @@ export default function HomePage() {
               📋 Diretrizes e Propostas
             </a>
             <a
-              href="#fatos-mitos"
+              href="#fatos-boatos"
               className="px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 font-medium shadow-2xs transition"
             >
-              💡 Fatos vs Mitos
+              💡 Fatos vs Boatos
             </a>
             <a
               href="#votacoes"
@@ -82,8 +82,8 @@ export default function HomePage() {
           <ProposalComparator candidatos={candidatos} />
         </section>
 
-        {/* 3. Fatos contra Mitos: Economia e Democracia */}
-        <section id="fatos-mitos" aria-label="Fatos contra Mitos e Alertas Democráticos">
+        {/* 3. Fatos contra Boatos: Economia e Democracia */}
+        <section id="fatos-boatos" aria-label="Fatos contra Boatos e Alertas Democráticos">
           <FactsAndLabels itens={fatos_contra_rotulos} />
         </section>
 

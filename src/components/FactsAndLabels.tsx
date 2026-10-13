@@ -39,7 +39,7 @@ export default function FactsAndLabels({ itens }: FactsAndLabelsProps) {
       </div>
 
       <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
-        Fatos contra Mitos: Economia e Democracia
+        Fatos contra Boatos: Economia e Democracia
       </h3>
       <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-2 mb-8 max-w-3xl leading-relaxed">
         Comparamos as ideias populares e discursos de campanha com os dados históricos reais, mostrando o que cada candidato já fez na prática e os alertas institucionais que pesam sobre cada lado.
