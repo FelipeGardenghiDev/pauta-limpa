@@ -55,8 +55,8 @@ export default function FactsAndLabels({ itens }: FactsAndLabelsProps) {
         Comparamos as ideias populares e discursos de campanha com os dados históricos reais, mostrando o que cada candidato já fez na prática e os alertas institucionais que pesam sobre cada lado.
       </p>
 
-      {/* Seletor dos 3 Temas de Boatos (Sem barra de rolagem horizontal) */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mb-8" role="tablist" aria-label="Temas de combate a boatos">
+      {/* Seletor dos 4 Temas de Boatos e Alertas (Sem barra de rolagem horizontal) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 mb-8" role="tablist" aria-label="Temas de combate a boatos">
         {itens.map(tema => {
           const isAtivo = tema.id === temaSelecionadoId;
           return (

@@ -15,7 +15,7 @@ export default function HomePage() {
   const candB = candidatos[1];
 
   return (
-    <div className="min-h-screen flex flex-col bg-zinc-50/50 dark:bg-zinc-950">
+    <div className="min-h-screen flex flex-col bg-zinc-50/60 text-zinc-900">
       <Navbar
         ano={eleicao.ano}
         turno={eleicao.turno}

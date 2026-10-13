@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
+  --background: #fbfbfd;
   --foreground: #18181b;
+  color-scheme: light;
 }
 
 @theme inline {
@@ -12,12 +13,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #09090b;
-    --foreground: #f4f4f5;
-  }
-}
+@variant dark (&:where(.dark, .dark *));
 
 html {
   overflow-x: hidden;

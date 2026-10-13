@@ -449,6 +449,61 @@
           }
         ]
       }
+    },
+    {
+      "id": "democracia-autoritarismo",
+      "categoria_label": "🛡️ Democracia e Riscos Autoritários",
+      "descricao_curta": "Histórico com eleições, respeito à Justiça, elogios à ditadura militar e riscos institucionais.",
+      "lula": {
+        "pergunta_mito": "Lula quer fechar o Congresso e transformar o Brasil numa ditadura?",
+        "fatos": [
+          {
+            "titulo": "Governou o país por 8 anos com eleições livres e alternância de poder",
+            "detalhe": "Lula governou o Brasil de 2003 a 2010. Mesmo no auge da aprovação popular (mais de 80%), não tentou mudar as regras para um terceiro mandato, aceitou as eleições e passou a faixa presidencial pacificamente para a sucessora eleita. O Congresso, a oposição e a imprensa atuaram com liberdade irrestrita."
+          },
+          {
+            "titulo": "Cumpriu ordens judiciais e respeitou o Estado de Direito",
+            "detalhe": "Mesmo quando foi alvo de investigações e passou 580 dias preso na Operação Lava Jato, entregou-se pacificamente à polícia e recorreu usando os recursos da lei até ter os processos anulados pelo STF, sem nunca convocar milícias ou tentar fechar tribunais."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Declarações amenizando ditaduras na América Latina",
+            "detalhe": "Lula é duramente criticado por organizações internacionais de direitos humanos por relativizar perseguições políticas em países aliados, como Venezuela (Nicolás Maduro) e Nicarágua (Daniel Ortega), tendo chegado a declarar que 'o conceito de democracia é relativo'."
+          },
+          {
+            "titulo": "Propostas partidárias de 'regulamentar a mídia'",
+            "detalhe": "Setores do PT e o próprio candidato defendem criar conselhos de fiscalização da imprensa e plataformas digitais. Entidades jornalísticas alertam que mecanismos estatais de controle da comunicação trazem o perigo de censura e controle de opinião."
+          }
+        ]
+      },
+      "flavio": {
+        "pergunta_mito": "Flávio Bolsonaro e seu grupo representam risco de autoritarismo e retrocesso nas liberdades?",
+        "fatos": [
+          {
+            "titulo": "Atuação legislativa dentro dos ritos do Congresso",
+            "detalhe": "Como senador eleito pelo Rio de Janeiro, Flávio atua dentro das comissões, relata projetos de lei e vota reformas econômicas seguindo os trâmites do Regimento Interno do Senado e construindo alianças partidárias regulares."
+          },
+          {
+            "titulo": "Defesa da liberdade irrestrita para igrejas e redes sociais",
+            "detalhe": "Opõe-se com firmeza a qualquer projeto de lei de regulamentação das redes sociais, defende a imunidade total para manifestações políticas na internet e a liberdade irrestrita de culto e atuação pública para pastores e templos religiosos."
+          }
+        ],
+        "alertas": [
+          {
+            "titulo": "Elogios à Ditadura Militar e a torturadores (sinal clássico de autoritarismo)",
+            "detalhe": "Cientistas políticos e historiadores apontam que exaltar regimes autoritários é um dos alertas mais graves de risco democrático. O grupo político e familiar de Flávio tem um histórico documentado de defender a Ditadura Militar de 1964 e elogiar publicamente figuras como o coronel Brilhante Ustra (oficial condenado pela Justiça brasileira por tortura de opositores durante o regime)."
+          },
+          {
+            "titulo": "Desconfiança do sistema eleitoral e os atos do 8 de Janeiro",
+            "detalhe": "O grupo manteve durante anos uma campanha contínua de ataques sem provas à segurança das urnas eletrônicas. A recusa em reconhecer a lisura da eleição de 2022 alimentou a marcha de apoiadores que culminou na invasão violenta e depredação dos Três Poderes em Brasília, além de investigações da Polícia Federal sobre planos golpistas."
+          },
+          {
+            "titulo": "Tentativa de sufocar o STF e governar sem freios institucionais",
+            "detalhe": "O grupo lidera propostas no Congresso para permitir que parlamentares anulem decisões do STF, aumentar ministros para indicar aliados e criar mandatos para juízes. Especialistas alertam que enfraquecer o tribunal que guarda a Constituição é a rota histórica padrão usada por governos que desmontam a democracia por dentro para governar sem freios nem oposição."
+          }
+        ]
+      }
     }
   ]
 }
